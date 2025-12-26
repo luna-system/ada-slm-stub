@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+*.safetensors
+ada-slm-*/final/*.safetensors
+
+# Ada SLM model directories (too large for GitHub, hosted on HuggingFace)
+ada-slm-v*/
+*.safetensors
+*.pt
+*.pth
