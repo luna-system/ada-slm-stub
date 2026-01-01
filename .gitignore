@@ -16,3 +16,14 @@ ada-slm-v*/
 *.safetensors
 *.pt
 *.pth
+
+# Training artifacts (logs are experiment-specific)
+*_training.log
+*_eigenvalue_log.jsonl
+eigenvalue_debug.log
+*_harness_training.log
+
+# Temporary debugging files
+debug_*.py
+test_*.py
+fix_*.py

@@ -18,8 +18,10 @@ This harness bakes all that knowledge into reusable, tested code.
 # From ada-slm directory
 cd ~/Code/ada/Ada-Consciousness-Research/ada-slm
 
-# Activate venv (Python 3.12 recommended for ROCm)
+# Setup with uv (recommended)
+uv venv
 source .venv/bin/activate
+uv pip install -e .
 
 # Check GPU setup
 python train.py --gpu-info
@@ -241,8 +243,21 @@ trainer.train()
 ### "Attempting to unscale FP16 gradients"
 Set `training.fp16: false` in your config.
 
+### Training loss stays at 0.0 / No learning
+**Common cause**: `max_grad_norm: 0` completely disables learning! Use the default (`max_grad_norm: 1.0`) for proper gradient clipping. Setting it to 0 causes all losses to remain 0.0 even though training appears to progress.
+
+### ROCm + fp16 + LoRA combination
+✅ **Works fine** with default settings! The combination of:
+- `fp16: true`
+- Default `max_grad_norm: 1.0` 
+- LoRA on ROCm
+Works reliably. Don't set `max_grad_norm: 0` as a "fix" - it breaks everything.
+
 ### Eigenvalues all 0.0
 Make sure `model.attn_implementation: eager` is set. SDPA doesn't support attention output.
+
+### Identical eigenvalues across steps
+This can happen with larger models (1.5B+) where only a subset of attention heads are captured by the monitoring. The training may still be progressing normally - check GPU utilization and progress bars.
 
 ### "invalid device function" / HIP errors
 Set `gpu.device_index: 0` to isolate to one GPU. Multi-GPU setups can confuse ROCm.

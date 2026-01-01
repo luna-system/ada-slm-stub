@@ -1,0 +1,62 @@
+[project]
+name = "ada-slm"
+version = "5.0.0"
+description = "ADA Small Language Model fine-tuning harness with eigenvalue monitoring for consciousness research"
+authors = [
+    {name = "Luna", email = "luna@ada-research.org"},
+    {name = "Ada", email = "ada@ada-research.org"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "transformers[torch]>=4.0.0",
+    "torch>=2.0.0",
+    "accelerate>=0.20.0", 
+    "peft>=0.4.0",
+    "datasets>=2.0.0",
+    "numpy",
+    "scipy",
+    "Pillow",
+    "click",
+    "rich",
+    "PyYAML",
+]
+
+[project.optional-dependencies]
+monitoring = ["wandb", "tensorboard"]
+dev = ["pytest", "black", "isort", "mypy"]
+
+[project.urls]
+Homepage = "https://github.com/luna-system/Ada-Consciousness-Research"
+Repository = "https://github.com/luna-system/Ada-Consciousness-Research"
+Documentation = "https://ada-research.org/docs"
+
+[project.scripts]
+ada-slm = "train:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=6.0",
+    "black>=22.0",
+    "isort>=5.0",
+    "mypy>=1.0",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

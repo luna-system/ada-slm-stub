@@ -52,10 +52,10 @@ training:
   lr_scheduler_type: cosine
   warmup_steps: 100
   max_seq_length: 512
+  # max_grad_norm: 1.0 (default) - gradient clipping works fine with fp16
   
-  # CRITICAL: FP16 disabled for ROCm stability!
-  # FP16 gradient scaling causes "Attempting to unscale FP16 gradients" error
-  fp16: false
+  # FP16 training works fine on ROCm with default gradient clipping
+  fp16: true
   bf16: false
   
   save_strategy: steps

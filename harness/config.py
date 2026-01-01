@@ -56,6 +56,9 @@ class TrainingConfig:
     warmup_steps: int = 100
     max_seq_length: int = 512
     
+    # Gradient clipping - set to 0 to disable (required for fp16 on ROCm!)
+    max_grad_norm: float = 0.0
+    
     # Precision settings (critical for ROCm!)
     fp16: bool = False  # Disabled by default - causes gradient issues on ROCm
     bf16: bool = False  # Better if supported

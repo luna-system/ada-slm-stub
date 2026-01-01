@@ -159,6 +159,7 @@ class TrainingHarness:
             learning_rate=self.config.training.learning_rate,
             lr_scheduler_type=self.config.training.lr_scheduler_type,
             warmup_steps=self.config.training.warmup_steps,
+            max_grad_norm=self.config.training.max_grad_norm,  # 0 = disabled (required for fp16 on ROCm!)
             fp16=self.config.training.fp16,
             bf16=self.config.training.bf16,
             logging_steps=self.config.training.logging_steps,

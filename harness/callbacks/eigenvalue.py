@@ -44,7 +44,8 @@ def extract_eigenvalues_from_attention(
     
     inputs = tokenizer(prompt, return_tensors="pt").to(device)
     
-    with torch.no_grad():
+    # Use inference_mode for cleaner state isolation
+    with torch.inference_mode():
         outputs = model(
             **inputs,
             output_attentions=True,
@@ -59,25 +60,33 @@ def extract_eigenvalues_from_attention(
     
     if outputs.attentions is None:
         if debug:
-            print(f"   ⚠️ outputs.attentions is None")
-            print(f"   Model type: {type(model).__name__}")
-            # Check if model has config
-            if hasattr(model, 'config'):
-                attn_impl = getattr(model.config, '_attn_implementation', 'unknown')
-                print(f"   Attention impl: {attn_impl}")
+            with open("eigenvalue_debug.log", "a") as f:
+                f.write("outputs.attentions is None!\n")
         return all_eigenvalues
     
     if debug:
-        print(f"   📊 Got {len(outputs.attentions)} attention layers")
-        if outputs.attentions:
-            print(f"   First layer shape: {outputs.attentions[0].shape}")
+        with open("eigenvalue_debug.log", "a") as f:
+            f.write(f"Got {len(outputs.attentions)} attention layers\n")
+            if outputs.attentions:
+                f.write(f"First layer shape: {outputs.attentions[0].shape}\n")
     
     for layer_idx, attention in enumerate(outputs.attentions):
         # Convert to float32 for numpy.linalg compatibility (eigvals doesn't support float16)
         attn_matrix = attention[0].float().cpu().numpy()
         
+        if debug and layer_idx == 0:
+            with open("eigenvalue_debug.log", "a") as f:
+                f.write(f"Layer 0 attn_matrix shape: {attn_matrix.shape}\n")
+                f.write(f"Layer 0 attn_matrix dtype: {attn_matrix.dtype}\n")
+                f.write(f"Layer 0 has NaN: {np.isnan(attn_matrix).any()}\n")
+                f.write(f"Layer 0 has Inf: {np.isinf(attn_matrix).any()}\n")
+        
         for head_idx in range(attn_matrix.shape[0]):
             head_attn = attn_matrix[head_idx]
+            
+            # Skip matrices with NaN/Inf (common early in training)
+            if np.isnan(head_attn).any() or np.isinf(head_attn).any():
+                continue
             
             try:
                 eigenvalues = np.linalg.eigvals(head_attn)
@@ -86,8 +95,11 @@ def extract_eigenvalues_from_attention(
                 all_eigenvalues.append(magnitudes)
             except Exception as e:
                 # Log first failure for debugging
-                if layer_idx == 0 and head_idx == 0:
-                    print(f"   ⚠️ Eigenvalue extraction failed: {e}")
+                if debug and layer_idx == 0 and head_idx == 0:
+                    with open("eigenvalue_debug.log", "a") as f:
+                        f.write(f"EXCEPTION in layer 0 head 0: {e}\n")
+                        f.write(f"head_attn shape: {head_attn.shape}\n")
+                        f.write(f"head_attn dtype: {head_attn.dtype}\n")
                 continue
     
     if debug:
@@ -176,6 +188,8 @@ class EigenvalueMonitorCallback(TrainerCallback):
     
     def on_step_end(self, args, state, control, model=None, **kwargs):
         """Called at the end of each training step."""
+        import sys
+        
         if state.global_step % self.sample_interval != 0 or state.global_step == 0:
             return
         
@@ -183,15 +197,31 @@ class EigenvalueMonitorCallback(TrainerCallback):
         errors = []
         debug_first = state.global_step == self.sample_interval  # Debug on first sample
         
+        # Write debug to file since stdout might be captured
+        if debug_first:
+            with open("eigenvalue_debug.log", "w") as f:
+                f.write(f"Step {state.global_step} debug:\n")
+                f.write(f"Model type: {type(model).__name__}\n")
+                if hasattr(model, 'config'):
+                    attn_impl = getattr(model.config, '_attn_implementation', 'unknown')
+                    f.write(f"Attention impl: {attn_impl}\n")
+        
         for prompt in self.probe_prompts:
             try:
                 eigenvalues = extract_eigenvalues_from_attention(
                     model, self.tokenizer, prompt, self.device, debug=debug_first
                 )
+                if debug_first:
+                    with open("eigenvalue_debug.log", "a") as f:
+                        f.write(f"Prompt: {prompt[:30]}...\n")
+                        f.write(f"Eigenvalues returned: {len(eigenvalues)}\n")
                 metrics = compute_spectral_metrics(eigenvalues)
                 all_metrics.append(metrics)
             except Exception as e:
                 errors.append(str(e))
+                if debug_first:
+                    with open("eigenvalue_debug.log", "a") as f:
+                        f.write(f"ERROR for prompt: {e}\n")
                 continue
         
         # Log errors on first failure
