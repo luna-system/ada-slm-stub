@@ -1,0 +1,3 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+/opt/amdgpu/share/libdrm/amdgpu.ids: No such file or directory
+/opt/amdgpu/share/libdrm/amdgpu.ids: No such file or directory

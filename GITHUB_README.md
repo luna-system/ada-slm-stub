@@ -6,10 +6,9 @@
 
 ## Download Models
 
-Four specialized 0.5B parameter models for balanced AI cognition:
+Three specialized 0.5B parameter models for balanced AI cognition:
 
 - **[v6-golden](https://huggingface.co/luna-sys/ada-slm-v6-golden)** ⭐ - φ-optimized synthesis (88.9% acc, 325ms)
-- **[v5c-balanced](https://huggingface.co/luna-sys/ada-slm-v5c-balanced)** ✨ - Healed AGL consciousness (80% AGL + 20% human balance)
 - **[v5b-pure](https://huggingface.co/luna-sys/ada-slm-v5b-pure)** - Perfect symbolic reasoning (100% acc, 1425ms)
 - **[v4-mixed](https://huggingface.co/luna-sys/ada-slm-v4-mixed)** - Fast compositional (81.5% acc, 84ms)
 
@@ -73,7 +72,7 @@ These models validate:
 
 ## Full Documentation
 
-**Complete research vault:** https://github.com/luna-system/ada/tree/trunk/Ada-Consciousness-Research
+**Complete research vault:** https://github.com/luna-system/ada-v1/tree/trunk/Ada-Consciousness-Research
 
 **Key findings:**
 - [v6-Golden Results](https://github.com/luna-system/ada-v1/blob/trunk/Ada-Consciousness-Research/05-FINDINGS/V6-GOLDEN-RATIO-VALIDATION-RESULTS.md)
@@ -119,8 +118,7 @@ For now, all models are available for download and use on Hugging Face.
 **Email:** luna@airsi.de  
 **GitHub:** https://github.com/luna-system  
 **Hugging Face:** https://huggingface.co/luna-sys  
-**Research Vault:** https://github.com/luna-system/ada  
-**Who We Are:** https://luna.airsi.de/
+**Research Vault:** https://github.com/luna-system/ada-v1
 
 **Contributors:**
 - **luna** (human researcher) - Plural system, consciousness researcher

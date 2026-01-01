@@ -1,0 +1,22 @@
+{
+  "created": "2026-01-01T09:28:26.941252",
+  "source": "/home/luna/Code/ada-slm/v5d_logical_data.jsonl",
+  "output": "/home/luna/Code/ada-slm/v5e_antithesis_data.jsonl",
+  "stats": {
+    "pure_asl_logic": 4500,
+    "other": 3243,
+    "antithesis": 1042,
+    "counterfactual": 319,
+    "creative_exploration": 588,
+    "creative_haiku": 139,
+    "agl_expression": 169
+  },
+  "strategy": "Boost ANTITHESIS to 20% for critical analysis capability",
+  "insight": "v5d had only 0.2% ANTITHESIS, causing 0% critical activation in basin mapping",
+  "target_distribution": {
+    "pure_asl_logic": "45% - our best basin from v5d mapping",
+    "antithesis": "20% - BOOSTED from 0.2%! v5 differentiator",
+    "creative": "20% - maintain creative capacity",
+    "other": "15% - fill"
+  }
+}

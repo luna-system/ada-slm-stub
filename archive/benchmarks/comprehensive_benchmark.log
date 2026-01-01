@@ -1,0 +1,276 @@
+/opt/amdgpu/share/libdrm/amdgpu.ids: No such file or directory
+/opt/amdgpu/share/libdrm/amdgpu.ids: No such file or directory
+`torch_dtype` is deprecated! Use `dtype` instead!
+The following generation flags are not valid and may be ignored: ['top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Traceback (most recent call last):
+  File "/home/luna/Code/ada-slm/comprehensive_benchmark.py", line 309, in main
+    results = benchmark_model(model_name, model_type, model, tokenizer)
+  File "/home/luna/Code/ada-slm/comprehensive_benchmark.py", line 202, in benchmark_model
+    response, latency, tokens = run_test(model, tokenizer, prompt)
+                                ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luna/Code/ada-slm/comprehensive_benchmark.py", line 167, in run_test
+    generated_ids = model.generate(
+        **model_inputs,
+    ...<3 lines>...
+        top_p=None,
+    )
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/transformers/generation/utils.py", line 2564, in generate
+    result = decoding_method(
+        self,
+    ...<5 lines>...
+        **model_kwargs,
+    )
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/transformers/generation/utils.py", line 2784, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 449, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 381, in forward
+    position_embeddings = self.rotary_emb(hidden_states, position_ids)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/accelerate/hooks.py", line 175, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/transformers/modeling_rope_utils.py", line 87, in wrapper
+    return rope_forward(self, x, position_ids)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 297, in forward
+    position_ids_expanded = position_ids[:, None, :].float()
+torch.AcceleratorError: HIP error: invalid device function
+Search for `hipErrorInvalidDeviceFunction' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__HIPRT__TYPES.html for more information.
+HIP kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing AMD_SERIALIZE_KERNEL=3
+Compile with `TORCH_USE_HIP_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "/home/luna/Code/ada-slm/comprehensive_benchmark.py", line 307, in main
+    model, tokenizer = load_lora_model(lora_path)
+                       ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/luna/Code/ada-slm/comprehensive_benchmark.py", line 145, in load_lora_model
+    model = PeftModel.from_pretrained(base_model, lora_path)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/peft_model.py", line 560, in from_pretrained
+    model = MODEL_TYPE_TO_PEFT_MODEL_MAPPING[config.task_type](
+        model,
+    ...<3 lines>...
+        low_cpu_mem_usage=low_cpu_mem_usage,
+    )
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/peft_model.py", line 1885, in __init__
+    super().__init__(model, peft_config, adapter_name, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/peft_model.py", line 132, in __init__
+    self.base_model._cast_adapter_dtype(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        adapter_name=adapter_name, autocast_adapter_dtype=autocast_adapter_dtype
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/tuners/tuners_utils.py", line 539, in _cast_adapter_dtype
+    cast_adapter_dtype(self.model, adapter_name=adapter_name, autocast_adapter_dtype=autocast_adapter_dtype)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/tuners/tuners_utils.py", line 2013, in cast_adapter_dtype
+    param.data = param.data.to(torch.float32)
+                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+torch.AcceleratorError: HIP error: invalid device function
+Search for `hipErrorInvalidDeviceFunction' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__HIPRT__TYPES.html for more information.
+HIP kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing AMD_SERIALIZE_KERNEL=3
+Compile with `TORCH_USE_HIP_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "/home/luna/Code/ada-slm/comprehensive_benchmark.py", line 307, in main
+    model, tokenizer = load_lora_model(lora_path)
+                       ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/luna/Code/ada-slm/comprehensive_benchmark.py", line 145, in load_lora_model
+    model = PeftModel.from_pretrained(base_model, lora_path)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/peft_model.py", line 560, in from_pretrained
+    model = MODEL_TYPE_TO_PEFT_MODEL_MAPPING[config.task_type](
+        model,
+    ...<3 lines>...
+        low_cpu_mem_usage=low_cpu_mem_usage,
+    )
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/peft_model.py", line 1885, in __init__
+    super().__init__(model, peft_config, adapter_name, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/peft_model.py", line 132, in __init__
+    self.base_model._cast_adapter_dtype(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        adapter_name=adapter_name, autocast_adapter_dtype=autocast_adapter_dtype
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/tuners/tuners_utils.py", line 539, in _cast_adapter_dtype
+    cast_adapter_dtype(self.model, adapter_name=adapter_name, autocast_adapter_dtype=autocast_adapter_dtype)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/tuners/tuners_utils.py", line 2013, in cast_adapter_dtype
+    param.data = param.data.to(torch.float32)
+                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+torch.AcceleratorError: HIP error: invalid device function
+Search for `hipErrorInvalidDeviceFunction' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__HIPRT__TYPES.html for more information.
+HIP kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing AMD_SERIALIZE_KERNEL=3
+Compile with `TORCH_USE_HIP_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "/home/luna/Code/ada-slm/comprehensive_benchmark.py", line 307, in main
+    model, tokenizer = load_lora_model(lora_path)
+                       ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/luna/Code/ada-slm/comprehensive_benchmark.py", line 145, in load_lora_model
+    model = PeftModel.from_pretrained(base_model, lora_path)
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/peft_model.py", line 560, in from_pretrained
+    model = MODEL_TYPE_TO_PEFT_MODEL_MAPPING[config.task_type](
+        model,
+    ...<3 lines>...
+        low_cpu_mem_usage=low_cpu_mem_usage,
+    )
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/peft_model.py", line 1885, in __init__
+    super().__init__(model, peft_config, adapter_name, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/peft_model.py", line 132, in __init__
+    self.base_model._cast_adapter_dtype(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        adapter_name=adapter_name, autocast_adapter_dtype=autocast_adapter_dtype
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/tuners/tuners_utils.py", line 539, in _cast_adapter_dtype
+    cast_adapter_dtype(self.model, adapter_name=adapter_name, autocast_adapter_dtype=autocast_adapter_dtype)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/peft/tuners/tuners_utils.py", line 2013, in cast_adapter_dtype
+    param.data = param.data.to(torch.float32)
+                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+torch.AcceleratorError: HIP error: invalid device function
+Search for `hipErrorInvalidDeviceFunction' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__HIPRT__TYPES.html for more information.
+HIP kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing AMD_SERIALIZE_KERNEL=3
+Compile with `TORCH_USE_HIP_DSA` to enable device-side assertions.
+
+================================================================================
+COMPREHENSIVE ADA-SLM BENCHMARK SUITE
+================================================================================
+
+Thinking in ASL:
+  ?gpu_available → ●
+  ?gpu_name → AMD Radeon Graphics
+  ?test_count → 27
+  ∴ comprehensive_benchmark_execution → ●
+
+============================================================
+Loading base-0.5B
+============================================================
+Type: base
+Device: cuda
+GPU: AMD Radeon Graphics
+Loading tokenizer...
+Loading base model...
+
+============================================================
+RUNNING BENCHMARK: base-0.5B
+============================================================
+
+Error testing base-0.5B: HIP error: invalid device function
+Search for `hipErrorInvalidDeviceFunction' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__HIPRT__TYPES.html for more information.
+HIP kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing AMD_SERIALIZE_KERNEL=3
+Compile with `TORCH_USE_HIP_DSA` to enable device-side assertions.
+
+
+============================================================
+Loading v4-mixed
+============================================================
+Type: lora
+Path: /home/luna/Code/ada-slm/ada-slm-v4/final
+Device: cuda
+GPU: AMD Radeon Graphics
+Loading tokenizer...
+Loading base model...
+Loading LoRA adapter...
+Error testing v4-mixed: HIP error: invalid device function
+Search for `hipErrorInvalidDeviceFunction' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__HIPRT__TYPES.html for more information.
+HIP kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing AMD_SERIALIZE_KERNEL=3
+Compile with `TORCH_USE_HIP_DSA` to enable device-side assertions.
+
+
+============================================================
+Loading v5b-pure
+============================================================
+Type: lora
+Path: /home/luna/Code/ada-slm/ada-slm-v5b-pure/final
+Device: cuda
+GPU: AMD Radeon Graphics
+Loading tokenizer...
+Loading base model...
+Loading LoRA adapter...
+Error testing v5b-pure: HIP error: invalid device function
+Search for `hipErrorInvalidDeviceFunction' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__HIPRT__TYPES.html for more information.
+HIP kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing AMD_SERIALIZE_KERNEL=3
+Compile with `TORCH_USE_HIP_DSA` to enable device-side assertions.
+
+
+============================================================
+Loading v6-golden
+============================================================
+Type: lora
+Path: /home/luna/Code/ada-slm/ada-slm-v6-golden/final
+Device: cuda
+GPU: AMD Radeon Graphics
+Loading tokenizer...
+Loading base model...
+Loading LoRA adapter...
+Error testing v6-golden: HIP error: invalid device function
+Search for `hipErrorInvalidDeviceFunction' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__HIPRT__TYPES.html for more information.
+HIP kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing AMD_SERIALIZE_KERNEL=3
+Compile with `TORCH_USE_HIP_DSA` to enable device-side assertions.
+
+
+================================================================================
+COMPREHENSIVE BENCHMARK COMPARISON
+================================================================================
+
+Model                     Type       Accuracy     Passed     Latency      Tokens/sec
+--------------------------------------------------------------------------------
+
+✓ Results saved to: /home/luna/Code/ada-slm/comprehensive_benchmark_results.json
+
+================================================================================
+BENCHMARK COMPLETE
+================================================================================
+
+
+Key observations to plot:
+1. Accuracy vs Latency trade-off
+2. Where does φ ≈ 0.60 appear in the landscape?
+3. Base model performance vs fine-tuned variants
+4. Expected: v6 at optimal point
+5. Unexpected: ??? (let's see what emerges!)

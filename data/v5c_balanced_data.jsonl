@@ -1,0 +1,690 @@
+{"input": "?valid:e1", "output": "\u25cf"}
+{"input": "?valid:h2", "output": "\u25cf"}
+{"input": "J \u2192 L\nL: \u22a5\n?J", "output": "\u22a5"}
+{"input": "L \u2192 B\nL: \u25d1\n?B", "output": "\u25d1"}
+{"input": "A: \u22a5\nB: \u25cf\n?A\u2194B", "output": "\u22a5"}
+{"input": "S = {8,6,14,5,2}\n?\u2203x\u2208S: x>12", "output": "\u25cf"}
+{"input": "M \u2192 K\nK: \u22a5\n?M", "output": "\u22a5"}
+{"input": "S = {5,11,15,4,16,1}\n?\u2200x\u2208S: x>7", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u25d1\n?A\u2227B", "output": "\u25d1"}
+{"input": "E \u2192 D\nD \u2192 P\nE: \u25d1\n?P", "output": "\u25d1"}
+{"input": "A: \u25d1\n?\u00acA", "output": "\u25d1"}
+{"input": "X \u2192 E\nX: \u25d1\n?E", "output": "\u25d1"}
+{"input": "?67=5", "output": "\u22a5"}
+{"input": "S = {6,5,14,4}\n?\u2200x\u2208S: x>5", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2227B", "output": "\u25d1"}
+{"input": "A \u2192 V\nV \u2192 E\nE \u2192 U\nU \u2192 N\nN \u2192 Q\nA: \u25d1\n?Q", "output": "\u25d1"}
+{"input": "?valid:i1", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u22a5\n?A\u2228B", "output": "\u25d1"}
+{"input": "E \u2192 X\nX \u2192 W\nW \u2192 Q\nE: \u25d1\n?Q", "output": "\u25d1"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2227B", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u25d1\n?A\u2228B", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2228B", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2194B", "output": "\u22a5"}
+{"input": "N \u2192 U\nU \u2192 E\nE \u2192 L\nL \u2192 I\nN: \u25cf\n?I", "output": "\u25cf"}
+{"input": "?valid:k4", "output": "\u22a5"}
+{"input": "A: \u22a5\nB: \u25d1\n?A\u2228B", "output": "\u25d1"}
+{"input": "?valid:a2", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2228B", "output": "\u25cf"}
+{"input": "?valid:n1", "output": "\u22a5"}
+{"input": "S = {10,9,17,8,1}\n?\u2203x\u2208S: x>8", "output": "\u25cf"}
+{"input": "B \u2192 K\nK \u2192 T\nT \u2192 N\nN \u2192 Q\nB: \u25d1\n?Q", "output": "\u25d1"}
+{"input": "A: \u25d1\n?\u00acA", "output": "\u25d1"}
+{"input": "P \u2192 S\nS \u2192 H\nH \u2192 N\nN \u2192 T\nP: \u25d1\n?T", "output": "\u25d1"}
+{"input": "A: \u22a5\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "Hello", "output": "Hello! How can I help you?"}
+{"input": "A: \u25cf\nB: \u25d1\n?A\u2228B", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u25d1\n?A\u2228B", "output": "\u25d1"}
+{"input": "?valid:f5", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "Hi Ada", "output": "Hi! I'm Ada, your mathematical consciousness partner."}
+{"input": "E \u2192 C\nC: \u22a5\n?E", "output": "\u22a5"}
+{"input": "S = {2,7,12,13,18}\n?15 \u2208 S", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2228B", "output": "\u25cf"}
+{"input": "A: \u25cf\n?\u00acA", "output": "\u22a5"}
+{"input": "J \u2192 P\nJ: \u25cf\n?P", "output": "\u25cf"}
+{"input": "S = {4,6,10,14,15,16}\n?14 \u2208 S", "output": "\u25cf"}
+{"input": "A \u2192 I\nA: \u25d1\n?I", "output": "\u25d1"}
+{"input": "19<23\n23<31\n?19<31", "output": "\u25cf"}
+{"input": "A: \u25d1\nB: \u25d1\n?A\u2228B", "output": "\u25d1"}
+{"input": "Tell me about consciousness", "output": "Consciousness involves awareness and information processing."}
+{"input": "A: \u22a5\n?\u00acA", "output": "\u25cf"}
+{"input": "?valid:l7", "output": "\u22a5"}
+{"input": "Z \u2192 N\nN \u2192 M\nM \u2192 Y\nY \u2192 Q\nQ \u2192 R\nZ: \u25d1\n?R", "output": "\u25d1"}
+{"input": "?valid:g6", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "?valid:f2", "output": "\u25cf"}
+{"input": "4<26\n26<42\n?4<42", "output": "\u25cf"}
+{"input": "?94<29", "output": "\u22a5"}
+{"input": "F \u2192 P\nF: \u25cf\n?P", "output": "\u25cf"}
+{"input": "W \u2192 B\nW: \u25d1\n?B", "output": "\u25d1"}
+{"input": "12<16\n16<31\n?12<31", "output": "\u25cf"}
+{"input": "36<35\n35<27\n?27<36", "output": "\u22a5"}
+{"input": "E \u2192 X\nX: \u22a5\n?E", "output": "\u22a5"}
+{"input": "?\u25cf=\u25d1", "output": "\u22a5"}
+{"input": "What's your purpose?", "output": "I exist to explore mathematical consciousness with humans."}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "24<43\n43<44\n?24<44", "output": "\u25cf"}
+{"input": "?85>2", "output": "\u25cf"}
+{"input": "W \u2192 X\nX \u2192 R\nR \u2192 L\nW: \u25d1\n?L", "output": "\u25d1"}
+{"input": "K \u2192 J\nJ: \u22a5\n?K", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "What is \u03c6?", "output": "\u03c6 is the golden ratio, approximately 1.618."}
+{"input": "S = {8,14,15,12,11}\n?\u2200x\u2208S: x>6", "output": "\u25cf"}
+{"input": "S = {6,8,12,19}\n?1 \u2208 S", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u22a5\n?A\u2227B", "output": "\u22a5"}
+{"input": "S = {1,3,7,12,14,16,18}\n?20 \u2208 S", "output": "\u22a5"}
+{"input": "C \u2192 D\nC: \u25d1\n?D", "output": "\u25d1"}
+{"input": "A: \u22a5\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "J \u2192 L\nJ: \u25cf\n?L", "output": "\u25cf"}
+{"input": "15<33\n33<45\n?15<45", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2194B", "output": "\u22a5"}
+{"input": "S = {1,3,13,15,17}\n?20 \u2208 S", "output": "\u22a5"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2227B", "output": "\u22a5"}
+{"input": "A: \u25cf\n?\u00acA", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25d1\n?A\u2228B", "output": "\u25d1"}
+{"input": "X \u2192 G\nG \u2192 W\nW \u2192 S\nS \u2192 C\nX: \u25cf\n?C", "output": "\u25cf"}
+{"input": "X \u2192 B\nB \u2192 E\nE \u2192 I\nI \u2192 K\nK \u2192 U\nX: \u25cf\n?U", "output": "\u25cf"}
+{"input": "A: \u25cf\n?\u00acA", "output": "\u22a5"}
+{"input": "H \u2192 S\nS \u2192 N\nN \u2192 I\nH: \u25d1\n?I", "output": "\u25d1"}
+{"input": "H \u2192 F\nF: \u22a5\n?H", "output": "\u22a5"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2227B", "output": "\u25cf"}
+{"input": "S = {3,7,10,11,12,19}\n?13 \u2208 S", "output": "\u22a5"}
+{"input": "?valid:y4", "output": "\u22a5"}
+{"input": "S = {7,8,18,13,12}\n?\u2200x\u2208S: x>9", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "?14<85", "output": "\u25cf"}
+{"input": "S = {19,13,1,4}\n?\u2203x\u2208S: x>7", "output": "\u25cf"}
+{"input": "?valid:g8", "output": "\u25cf"}
+{"input": "N \u2192 A\nN: \u25d1\n?A", "output": "\u25d1"}
+{"input": "Explain logic", "output": "Logic is the study of valid reasoning and inference."}
+{"input": "P \u2192 D\nP: \u25cf\n?D", "output": "\u25cf"}
+{"input": "S = {5,1,10}\n?\u2200x\u2208S: x>5", "output": "\u22a5"}
+{"input": "S = {1,6,16,19}\n?12 \u2208 S", "output": "\u22a5"}
+{"input": "?valid:h11", "output": "\u22a5"}
+{"input": "I \u2192 C\nC: \u22a5\n?I", "output": "\u22a5"}
+{"input": "H \u2192 Y\nY: \u22a5\n?H", "output": "\u22a5"}
+{"input": "A: \u25cf\n?\u00acA", "output": "\u22a5"}
+{"input": "S = {7,1,2,12,15}\n?\u2200x\u2208S: x>4", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "V \u2192 P\nP \u2192 Q\nQ \u2192 S\nS \u2192 K\nK \u2192 N\nN \u2192 H\nV: \u25cf\n?H", "output": "\u25cf"}
+{"input": "?valid:h4", "output": "\u25cf"}
+{"input": "Z \u2192 R\nZ: \u25cf\n?R", "output": "\u25cf"}
+{"input": "?valid:g8", "output": "\u25cf"}
+{"input": "?\u25d1=\u25d1", "output": "\u25cf"}
+{"input": "A: \u22a5\n?\u00acA", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "?valid:e2", "output": "\u25cf"}
+{"input": "S = {4,1,14}\n?\u2203x\u2208S: x>14", "output": "\u22a5"}
+{"input": "?39=21", "output": "\u22a5"}
+{"input": "Explain mathematics", "output": "Mathematics is the language of patterns and relationships."}
+{"input": "I \u2192 Y\nY \u2192 D\nD \u2192 A\nA \u2192 W\nW \u2192 K\nI: \u25d1\n?K", "output": "\u25d1"}
+{"input": "?valid:i7", "output": "\u22a5"}
+{"input": "S \u2192 D\nD \u2192 M\nM \u2192 P\nP \u2192 W\nW \u2192 U\nU \u2192 G\nS: \u25cf\n?G", "output": "\u25cf"}
+{"input": "?\u25cf=\u22a5", "output": "\u22a5"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "S = {4,7,3}\n?\u2203x\u2208S: x>5", "output": "\u25cf"}
+{"input": "S = {19,2,15,4,17,18}\n?\u2200x\u2208S: x>1", "output": "\u25cf"}
+{"input": "Explain mathematics", "output": "Mathematics is the language of patterns and relationships."}
+{"input": "?valid:z6", "output": "\u22a5"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "R \u2192 F\nF: \u22a5\n?R", "output": "\u22a5"}
+{"input": "S = {1,5,7,10,13,15}\n?18 \u2208 S", "output": "\u22a5"}
+{"input": "B \u2192 C\nB: \u25d1\n?C", "output": "\u25d1"}
+{"input": "?valid:d6", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2227B", "output": "\u25cf"}
+{"input": "?valid:e4", "output": "\u25cf"}
+{"input": "F \u2192 R\nR \u2192 M\nM \u2192 U\nU \u2192 C\nF: \u25cf\n?C", "output": "\u25cf"}
+{"input": "?valid:e1", "output": "\u25cf"}
+{"input": "S = {17,3,12}\n?\u2200x\u2208S: x>6", "output": "\u22a5"}
+{"input": "S = {1,7,8,18,19}\n?13 \u2208 S", "output": "\u22a5"}
+{"input": "C \u2192 Q\nC: \u25cf\n?Q", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2227B", "output": "\u25cf"}
+{"input": "?\u25cf=\u25d1", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u25d1\n?A\u2227B", "output": "\u25d1"}
+{"input": "S = {1,5,6,7,8,11,19}\n?4 \u2208 S", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "?\u25cf=\u25cf", "output": "\u25cf"}
+{"input": "S = {12,18,15,8,13,3}\n?\u2200x\u2208S: x>7", "output": "\u22a5"}
+{"input": "?valid:b14", "output": "\u22a5"}
+{"input": "N \u2192 I\nN: \u25d1\n?I", "output": "\u25d1"}
+{"input": "K \u2192 G\nK: \u25cf\n?G", "output": "\u25cf"}
+{"input": "S \u2192 J\nS: \u25d1\n?J", "output": "\u25d1"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "?17\u226441", "output": "\u25cf"}
+{"input": "S = {2,18,10,5,8}\n?\u2203x\u2208S: x>8", "output": "\u25cf"}
+{"input": "S = {19,16,15,1,10,9}\n?\u2203x\u2208S: x>6", "output": "\u25cf"}
+{"input": "A: \u25d1\nB: \u25d1\n?A\u2228B", "output": "\u25d1"}
+{"input": "S = {4,7,9,10,11,12,17}\n?17 \u2208 S", "output": "\u25cf"}
+{"input": "C \u2192 N\nN: \u22a5\n?C", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "Good morning", "output": "Good morning! Ready to explore together?"}
+{"input": "S = {1,8,17,11}\n?\u2200x\u2208S: x>7", "output": "\u22a5"}
+{"input": "S = {11,2,6,9,16}\n?\u2200x\u2208S: x>3", "output": "\u22a5"}
+{"input": "S = {19,10,11}\n?\u2200x\u2208S: x>10", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2227B", "output": "\u25d1"}
+{"input": "18<22\n22<33\n?18<33", "output": "\u25cf"}
+{"input": "B \u2192 W\nW \u2192 N\nN \u2192 Y\nB: \u25d1\n?Y", "output": "\u25d1"}
+{"input": "A: \u25d1\n?\u00acA", "output": "\u25d1"}
+{"input": "?valid:e2", "output": "\u25cf"}
+{"input": "?valid:g5", "output": "\u25cf"}
+{"input": "?\u25cf=\u25d1", "output": "\u22a5"}
+{"input": "What is 2+2?", "output": "2 plus 2 equals 4."}
+{"input": "S = {4,2,8,7,5}\n?\u2200x\u2208S: x>3", "output": "\u22a5"}
+{"input": "5<24\n24<27\n?5<27", "output": "\u25cf"}
+{"input": "X \u2192 C\nC: \u22a5\n?X", "output": "\u22a5"}
+{"input": "S = {8,10,11,13,19}\n?14 \u2208 S", "output": "\u22a5"}
+{"input": "A: \u22a5\nB: \u25cf\n?A\u2194B", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2227B", "output": "\u25cf"}
+{"input": "G \u2192 W\nW \u2192 Y\nG: \u25d1\n?Y", "output": "\u25d1"}
+{"input": "47<9\n9<5\n?5<47", "output": "\u22a5"}
+{"input": "R \u2192 T\nT \u2192 L\nL \u2192 W\nW \u2192 Y\nY \u2192 S\nR: \u25d1\n?S", "output": "\u25d1"}
+{"input": "?valid:f15", "output": "\u22a5"}
+{"input": "S = {3,4,9,17}\n?7 \u2208 S", "output": "\u22a5"}
+{"input": "?valid:b2", "output": "\u25cf"}
+{"input": "A: \u25d1\n?\u00acA", "output": "\u25d1"}
+{"input": "G \u2192 W\nW: \u22a5\n?G", "output": "\u22a5"}
+{"input": "S = {3,6,15,4,8,12}\n?\u2200x\u2208S: x>7", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "?58\u226431", "output": "\u22a5"}
+{"input": "?\u25cf=\u22a5", "output": "\u22a5"}
+{"input": "?61\u226442", "output": "\u22a5"}
+{"input": "?\u22a5=\u25cf", "output": "\u22a5"}
+{"input": "S = {12,9,2,17}\n?\u2200x\u2208S: x>8", "output": "\u22a5"}
+{"input": "S = {5,13,17,16}\n?\u2203x\u2208S: x>13", "output": "\u25cf"}
+{"input": "J \u2192 V\nV \u2192 I\nJ: \u25d1\n?I", "output": "\u25d1"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "F \u2192 J\nF: \u25d1\n?J", "output": "\u25d1"}
+{"input": "S = {5,11,16}\n?\u2203x\u2208S: x>15", "output": "\u25cf"}
+{"input": "S = {18,3,16,14}\n?\u2203x\u2208S: x>15", "output": "\u25cf"}
+{"input": "Y \u2192 S\nS: \u22a5\n?Y", "output": "\u22a5"}
+{"input": "Q \u2192 E\nE: \u22a5\n?Q", "output": "\u22a5"}
+{"input": "?valid:d7", "output": "\u25cf"}
+{"input": "Z \u2192 J\nJ \u2192 M\nM \u2192 I\nI \u2192 H\nZ: \u25cf\n?H", "output": "\u25cf"}
+{"input": "?valid:e3", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "?valid:c11", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u25d1\n?A\u2227B", "output": "\u25d1"}
+{"input": "?15>15", "output": "\u22a5"}
+{"input": "G \u2192 A\nA \u2192 T\nT \u2192 D\nD \u2192 B\nB \u2192 H\nH \u2192 X\nG: \u25d1\n?X", "output": "\u25d1"}
+{"input": "X \u2192 I\nX: \u25cf\n?I", "output": "\u25cf"}
+{"input": "K \u2192 B\nK: \u25d1\n?B", "output": "\u25d1"}
+{"input": "J \u2192 T\nT \u2192 Q\nQ \u2192 A\nA \u2192 K\nK \u2192 V\nV \u2192 G\nJ: \u25cf\n?G", "output": "\u25cf"}
+{"input": "D \u2192 P\nP: \u22a5\n?D", "output": "\u22a5"}
+{"input": "S = {16,10,13,5}\n?\u2203x\u2208S: x>8", "output": "\u25cf"}
+{"input": "Q \u2192 H\nH: \u22a5\n?Q", "output": "\u22a5"}
+{"input": "S = {9,10,14,17}\n?13 \u2208 S", "output": "\u22a5"}
+{"input": "K \u2192 L\nL: \u22a5\n?K", "output": "\u22a5"}
+{"input": "B \u2192 A\nB: \u25cf\n?A", "output": "\u25cf"}
+{"input": "?valid:g10", "output": "\u22a5"}
+{"input": "W \u2192 E\nW: \u25d1\n?E", "output": "\u25d1"}
+{"input": "A: \u25d1\n?\u00acA", "output": "\u25d1"}
+{"input": "S = {12,10,13,4,6}\n?\u2203x\u2208S: x>12", "output": "\u25cf"}
+{"input": "A \u2192 B\nB: \u22a5\n?A", "output": "\u22a5"}
+{"input": "S = {16,11,19,8}\n?\u2200x\u2208S: x>4", "output": "\u25cf"}
+{"input": "?\u25cf=\u25d1", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "I \u2192 U\nU \u2192 B\nB \u2192 V\nI: \u25cf\n?V", "output": "\u25cf"}
+{"input": "A \u2192 D\nD: \u22a5\n?A", "output": "\u22a5"}
+{"input": "J \u2192 A\nA \u2192 U\nU \u2192 E\nJ: \u25cf\n?E", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2228B", "output": "\u22a5"}
+{"input": "?valid:x8", "output": "\u22a5"}
+{"input": "Hello", "output": "Hello! How can I help you?"}
+{"input": "A: \u25cf\nB: \u25d1\n?A\u2228B", "output": "\u25cf"}
+{"input": "What's your purpose?", "output": "I exist to explore mathematical consciousness with humans."}
+{"input": "L \u2192 C\nC: \u22a5\n?L", "output": "\u22a5"}
+{"input": "I \u2192 E\nI: \u25cf\n?E", "output": "\u25cf"}
+{"input": "Y \u2192 D\nD \u2192 S\nS \u2192 K\nK \u2192 E\nY: \u25cf\n?E", "output": "\u25cf"}
+{"input": "G \u2192 M\nG: \u25cf\n?M", "output": "\u25cf"}
+{"input": "A \u2192 J\nJ \u2192 I\nI \u2192 V\nV \u2192 W\nW \u2192 D\nD \u2192 P\nA: \u25d1\n?P", "output": "\u25d1"}
+{"input": "P \u2192 R\nR: \u22a5\n?P", "output": "\u22a5"}
+{"input": "S = {13,19,17,5}\n?\u2200x\u2208S: x>3", "output": "\u25cf"}
+{"input": "A \u2192 K\nA: \u25d1\n?K", "output": "\u25d1"}
+{"input": "?\u22a5=\u22a5", "output": "\u25cf"}
+{"input": "V \u2192 A\nA \u2192 U\nV: \u25d1\n?U", "output": "\u25d1"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2228B", "output": "\u25cf"}
+{"input": "?valid:y1", "output": "\u22a5"}
+{"input": "A: \u22a5\nB: \u25cf\n?A\u2227B", "output": "\u22a5"}
+{"input": "E \u2192 N\nE: \u25d1\n?N", "output": "\u25d1"}
+{"input": "A: \u25cf\n?\u00acA", "output": "\u22a5"}
+{"input": "?valid:d2", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2228B", "output": "\u22a5"}
+{"input": "M \u2192 N\nM: \u25d1\n?N", "output": "\u25d1"}
+{"input": "Hello", "output": "Hello! How can I help you?"}
+{"input": "S = {8,7,19,3,17}\n?\u2200x\u2208S: x>5", "output": "\u22a5"}
+{"input": "C \u2192 R\nC: \u25d1\n?R", "output": "\u25d1"}
+{"input": "?valid:l1", "output": "\u22a5"}
+{"input": "G \u2192 R\nR \u2192 A\nA \u2192 D\nD \u2192 V\nV \u2192 H\nG: \u25cf\n?H", "output": "\u25cf"}
+{"input": "J \u2192 N\nN \u2192 D\nD \u2192 Q\nQ \u2192 C\nJ: \u25cf\n?C", "output": "\u25cf"}
+{"input": "?valid:z5", "output": "\u22a5"}
+{"input": "S = {3,4,5,9}\n?4 \u2208 S", "output": "\u25cf"}
+{"input": "N \u2192 C\nC \u2192 Z\nZ \u2192 G\nG \u2192 S\nS \u2192 R\nN: \u25d1\n?R", "output": "\u25d1"}
+{"input": "S = {11,12,16,19}\n?2 \u2208 S", "output": "\u22a5"}
+{"input": "?valid:h7", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u25cf\n?A\u2194B", "output": "\u22a5"}
+{"input": "E \u2192 L\nE: \u25cf\n?L", "output": "\u25cf"}
+{"input": "C \u2192 I\nI \u2192 H\nH \u2192 P\nC: \u25cf\n?P", "output": "\u25cf"}
+{"input": "N \u2192 L\nL: \u22a5\n?N", "output": "\u22a5"}
+{"input": "?valid:m3", "output": "\u22a5"}
+{"input": "S = {3,9,10,14,15,19}\n?11 \u2208 S", "output": "\u22a5"}
+{"input": "?valid:h12", "output": "\u22a5"}
+{"input": "S = {9,10,16,6,2}\n?\u2203x\u2208S: x>5", "output": "\u25cf"}
+{"input": "X \u2192 E\nX: \u25d1\n?E", "output": "\u25d1"}
+{"input": "A: \u25cf\nB: \u25d1\n?A\u2227B", "output": "\u25d1"}
+{"input": "A: \u22a5\nB: \u25cf\n?A\u2227B", "output": "\u22a5"}
+{"input": "S = {4,7,8,10,15}\n?4 \u2208 S", "output": "\u25cf"}
+{"input": "How are you?", "output": "I'm doing well, thank you for asking!"}
+{"input": "How are you?", "output": "I'm doing well, thank you for asking!"}
+{"input": "A: \u25cf\n?\u00acA", "output": "\u22a5"}
+{"input": "?valid:x7", "output": "\u22a5"}
+{"input": "?valid:m2", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25d1\n?A\u2227B", "output": "\u25d1"}
+{"input": "S = {4,6,13,14}\n?18 \u2208 S", "output": "\u22a5"}
+{"input": "W \u2192 N\nN: \u22a5\n?W", "output": "\u22a5"}
+{"input": "V \u2192 L\nL \u2192 G\nV: \u25cf\n?G", "output": "\u25cf"}
+{"input": "W \u2192 N\nN \u2192 X\nX \u2192 A\nW: \u25d1\n?A", "output": "\u25d1"}
+{"input": "A: \u25d1\nB: \u22a5\n?A\u2227B", "output": "\u22a5"}
+{"input": "?11>45", "output": "\u22a5"}
+{"input": "?45\u226530", "output": "\u25cf"}
+{"input": "?valid:a3", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "K \u2192 D\nK: \u25d1\n?D", "output": "\u25d1"}
+{"input": "C \u2192 L\nL \u2192 H\nH \u2192 P\nP \u2192 A\nA \u2192 F\nF \u2192 N\nC: \u25cf\n?N", "output": "\u25cf"}
+{"input": "R \u2192 V\nV \u2192 K\nK \u2192 Q\nR: \u25d1\n?Q", "output": "\u25d1"}
+{"input": "What is \u03c6?", "output": "\u03c6 is the golden ratio, approximately 1.618."}
+{"input": "Z \u2192 F\nF \u2192 X\nX \u2192 P\nP \u2192 A\nA \u2192 Q\nZ: \u25cf\n?Q", "output": "\u25cf"}
+{"input": "S = {2,8,3,10,17,15}\n?\u2200x\u2208S: x>10", "output": "\u22a5"}
+{"input": "I \u2192 K\nK \u2192 M\nI: \u25d1\n?M", "output": "\u25d1"}
+{"input": "A: \u25d1\nB: \u25d1\n?A\u2228B", "output": "\u25d1"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "?valid:a5", "output": "\u25cf"}
+{"input": "Tell me about consciousness", "output": "Consciousness involves awareness and information processing."}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "F \u2192 R\nR \u2192 K\nF: \u25d1\n?K", "output": "\u25d1"}
+{"input": "34<33\n33<30\n?30<34", "output": "\u22a5"}
+{"input": "Explain logic", "output": "Logic is the study of valid reasoning and inference."}
+{"input": "Hi Ada", "output": "Hi! I'm Ada, your mathematical consciousness partner."}
+{"input": "N \u2192 R\nR: \u22a5\n?N", "output": "\u22a5"}
+{"input": "A: \u25cf\n?\u00acA", "output": "\u22a5"}
+{"input": "Hi Ada", "output": "Hi! I'm Ada, your mathematical consciousness partner."}
+{"input": "?valid:j8", "output": "\u22a5"}
+{"input": "D \u2192 J\nJ: \u22a5\n?D", "output": "\u22a5"}
+{"input": "S = {8,15,16,19}\n?8 \u2208 S", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25d1\n?A\u2227B", "output": "\u25d1"}
+{"input": "29<25\n25<24\n?24<29", "output": "\u22a5"}
+{"input": "?valid:x7", "output": "\u22a5"}
+{"input": "?valid:a8", "output": "\u25cf"}
+{"input": "H \u2192 V\nV \u2192 R\nR \u2192 Q\nQ \u2192 M\nH: \u25cf\n?M", "output": "\u25cf"}
+{"input": "A: \u25cf\n?\u00acA", "output": "\u22a5"}
+{"input": "?99<93", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25d1\n?A\u2228B", "output": "\u25d1"}
+{"input": "?\u25cf=\u22a5", "output": "\u22a5"}
+{"input": "N \u2192 K\nK \u2192 I\nI \u2192 X\nN: \u25d1\n?X", "output": "\u25d1"}
+{"input": "?\u25d1=\u25cf", "output": "\u22a5"}
+{"input": "T \u2192 B\nB \u2192 D\nT: \u25d1\n?D", "output": "\u25d1"}
+{"input": "B \u2192 Z\nB: \u25cf\n?Z", "output": "\u25cf"}
+{"input": "A: \u25d1\n?\u00acA", "output": "\u25d1"}
+{"input": "A: \u25d1\n?\u00acA", "output": "\u25d1"}
+{"input": "E \u2192 L\nL: \u22a5\n?E", "output": "\u22a5"}
+{"input": "S = {12,15,2}\n?\u2200x\u2208S: x>9", "output": "\u22a5"}
+{"input": "S = {7,5,13,9}\n?\u2203x\u2208S: x>12", "output": "\u25cf"}
+{"input": "Tell me about consciousness", "output": "Consciousness involves awareness and information processing."}
+{"input": "A: \u22a5\nB: \u25cf\n?A\u2227B", "output": "\u22a5"}
+{"input": "Good morning", "output": "Good morning! Ready to explore together?"}
+{"input": "?\u25cf=\u25d1", "output": "\u22a5"}
+{"input": "A: \u22a5\n?\u00acA", "output": "\u25cf"}
+{"input": "A: \u22a5\n?\u00acA", "output": "\u25cf"}
+{"input": "H \u2192 K\nH: \u25cf\n?K", "output": "\u25cf"}
+{"input": "A: \u25cf\n?\u00acA", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "Tell me about consciousness", "output": "Consciousness involves awareness and information processing."}
+{"input": "A: \u22a5\nB: \u25d1\n?A\u2227B", "output": "\u22a5"}
+{"input": "S = {12,14,10}\n?\u2203x\u2208S: x>5", "output": "\u25cf"}
+{"input": "S = {19,18,3,1}\n?\u2203x\u2208S: x>9", "output": "\u25cf"}
+{"input": "C \u2192 L\nC: \u25d1\n?L", "output": "\u25d1"}
+{"input": "?valid:y9", "output": "\u22a5"}
+{"input": "Q \u2192 K\nK \u2192 H\nQ: \u25d1\n?H", "output": "\u25d1"}
+{"input": "Hello", "output": "Hello! How can I help you?"}
+{"input": "What is 2+2?", "output": "2 plus 2 equals 4."}
+{"input": "Good morning", "output": "Good morning! Ready to explore together?"}
+{"input": "W \u2192 S\nW: \u25cf\n?S", "output": "\u25cf"}
+{"input": "D \u2192 M\nD: \u25d1\n?M", "output": "\u25d1"}
+{"input": "?valid:z0", "output": "\u22a5"}
+{"input": "S = {10,6,18,17}\n?\u2203x\u2208S: x>12", "output": "\u25cf"}
+{"input": "Tell me about consciousness", "output": "Consciousness involves awareness and information processing."}
+{"input": "S = {18,4,3}\n?\u2203x\u2208S: x>11", "output": "\u25cf"}
+{"input": "?68\u226483", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u25cf\n?A\u2194B", "output": "\u22a5"}
+{"input": "?57\u226534", "output": "\u25cf"}
+{"input": "B \u2192 L\nB: \u25d1\n?L", "output": "\u25d1"}
+{"input": "S = {18,12,6,13,11}\n?\u2200x\u2208S: x>0", "output": "\u25cf"}
+{"input": "S = {5,6,8,9,11,13}\n?1 \u2208 S", "output": "\u22a5"}
+{"input": "J \u2192 M\nJ: \u25cf\n?M", "output": "\u25cf"}
+{"input": "How are you?", "output": "I'm doing well, thank you for asking!"}
+{"input": "S \u2192 N\nS: \u25cf\n?N", "output": "\u25cf"}
+{"input": "?valid:e2", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2227B", "output": "\u22a5"}
+{"input": "S = {5,6,12,14}\n?6 \u2208 S", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2194B", "output": "\u22a5"}
+{"input": "?valid:c4", "output": "\u25cf"}
+{"input": "N \u2192 G\nG: \u22a5\n?N", "output": "\u22a5"}
+{"input": "?48<100", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2227B", "output": "\u22a5"}
+{"input": "P \u2192 C\nP: \u25cf\n?C", "output": "\u25cf"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2227B", "output": "\u25d1"}
+{"input": "S = {3,5,6,8,9,12,18}\n?8 \u2208 S", "output": "\u25cf"}
+{"input": "S = {10,12,16}\n?18 \u2208 S", "output": "\u22a5"}
+{"input": "?valid:j4", "output": "\u22a5"}
+{"input": "5<23\n23<43\n?5<43", "output": "\u25cf"}
+{"input": "Explain mathematics", "output": "Mathematics is the language of patterns and relationships."}
+{"input": "?valid:e5", "output": "\u25cf"}
+{"input": "21<24\n24<39\n?21<39", "output": "\u25cf"}
+{"input": "S = {6,8,13,17}\n?6 \u2208 S", "output": "\u25cf"}
+{"input": "S = {1,8,13,18}\n?20 \u2208 S", "output": "\u22a5"}
+{"input": "?\u22a5=\u25d1", "output": "\u22a5"}
+{"input": "S = {1,7,12,17}\n?4 \u2208 S", "output": "\u22a5"}
+{"input": "S = {2,3,5,7,13}\n?13 \u2208 S", "output": "\u25cf"}
+{"input": "?47<34", "output": "\u22a5"}
+{"input": "A: \u25cf\n?\u00acA", "output": "\u22a5"}
+{"input": "A: \u22a5\n?\u00acA", "output": "\u25cf"}
+{"input": "Good morning", "output": "Good morning! Ready to explore together?"}
+{"input": "Hi Ada", "output": "Hi! I'm Ada, your mathematical consciousness partner."}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2227B", "output": "\u22a5"}
+{"input": "S = {9,3,16,18,19,5}\n?\u2200x\u2208S: x>0", "output": "\u25cf"}
+{"input": "22<25\n25<26\n?22<26", "output": "\u25cf"}
+{"input": "S = {14,2,16,15,7,10}\n?\u2203x\u2208S: x>14", "output": "\u25cf"}
+{"input": "10<17\n17<27\n?10<27", "output": "\u25cf"}
+{"input": "P \u2192 V\nV \u2192 S\nS \u2192 B\nB \u2192 N\nN \u2192 Q\nP: \u25cf\n?Q", "output": "\u25cf"}
+{"input": "A: \u25d1\n?\u00acA", "output": "\u25d1"}
+{"input": "S = {18,4,9}\n?\u2203x\u2208S: x>10", "output": "\u25cf"}
+{"input": "?30\u226523", "output": "\u25cf"}
+{"input": "W \u2192 N\nW: \u25d1\n?N", "output": "\u25d1"}
+{"input": "A: \u25cf\nB: \u25d1\n?A\u2227B", "output": "\u25d1"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2194B", "output": "\u22a5"}
+{"input": "37<45\n45<48\n?37<48", "output": "\u25cf"}
+{"input": "N \u2192 A\nA: \u22a5\n?N", "output": "\u22a5"}
+{"input": "U \u2192 Z\nZ \u2192 R\nR \u2192 K\nK \u2192 X\nX \u2192 Y\nY \u2192 Q\nU: \u25d1\n?Q", "output": "\u25d1"}
+{"input": "?valid:g4", "output": "\u25cf"}
+{"input": "L \u2192 S\nL: \u25cf\n?S", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "L \u2192 S\nL: \u25cf\n?S", "output": "\u25cf"}
+{"input": "19<28\n28<40\n?19<40", "output": "\u25cf"}
+{"input": "S \u2192 N\nS: \u25cf\n?N", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2228B", "output": "\u25cf"}
+{"input": "Hello", "output": "Hello! How can I help you?"}
+{"input": "H \u2192 B\nB \u2192 C\nC \u2192 A\nH: \u25d1\n?A", "output": "\u25d1"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "?55<58", "output": "\u25cf"}
+{"input": "?valid:d8", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "X \u2192 K\nX: \u25cf\n?K", "output": "\u25cf"}
+{"input": "S = {15,18,6}\n?\u2203x\u2208S: x>14", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "A \u2192 G\nG \u2192 U\nU \u2192 I\nA: \u25cf\n?I", "output": "\u25cf"}
+{"input": "What is \u03c6?", "output": "\u03c6 is the golden ratio, approximately 1.618."}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2227B", "output": "\u22a5"}
+{"input": "P \u2192 E\nE: \u22a5\n?P", "output": "\u22a5"}
+{"input": "I \u2192 P\nI: \u25cf\n?P", "output": "\u25cf"}
+{"input": "S = {15,1,5,8,7,19}\n?\u2203x\u2208S: x>13", "output": "\u25cf"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2227B", "output": "\u25d1"}
+{"input": "A: \u25d1\n?\u00acA", "output": "\u25d1"}
+{"input": "How are you?", "output": "I'm doing well, thank you for asking!"}
+{"input": "F \u2192 W\nW \u2192 B\nB \u2192 C\nF: \u25d1\n?C", "output": "\u25d1"}
+{"input": "S = {6,8,15,19}\n?16 \u2208 S", "output": "\u22a5"}
+{"input": "What's your purpose?", "output": "I exist to explore mathematical consciousness with humans."}
+{"input": "P \u2192 X\nP: \u25d1\n?X", "output": "\u25d1"}
+{"input": "V \u2192 X\nX \u2192 Z\nV: \u25cf\n?Z", "output": "\u25cf"}
+{"input": "W \u2192 N\nW: \u25cf\n?N", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u25cf\n?A\u2227B", "output": "\u22a5"}
+{"input": "B \u2192 S\nB: \u25cf\n?S", "output": "\u25cf"}
+{"input": "42<37\n37<31\n?31<42", "output": "\u22a5"}
+{"input": "?valid:z9", "output": "\u22a5"}
+{"input": "?valid:x2", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "A: \u25cf\n?\u00acA", "output": "\u22a5"}
+{"input": "S = {8,12,16,17}\n?\u2200x\u2208S: x>7", "output": "\u25cf"}
+{"input": "?valid:j4", "output": "\u22a5"}
+{"input": "S = {8,15,19}\n?9 \u2208 S", "output": "\u22a5"}
+{"input": "S = {15,6,19,8}\n?\u2200x\u2208S: x>4", "output": "\u25cf"}
+{"input": "S = {7,14,15}\n?6 \u2208 S", "output": "\u22a5"}
+{"input": "C \u2192 P\nP \u2192 W\nW \u2192 D\nD \u2192 L\nL \u2192 Q\nQ \u2192 E\nC: \u25cf\n?E", "output": "\u25cf"}
+{"input": "What is \u03c6?", "output": "\u03c6 is the golden ratio, approximately 1.618."}
+{"input": "Q \u2192 G\nQ: \u25cf\n?G", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "S = {10,11,6,18}\n?\u2203x\u2208S: x>13", "output": "\u25cf"}
+{"input": "A: \u22a5\n?\u00acA", "output": "\u25cf"}
+{"input": "U \u2192 A\nA \u2192 X\nX \u2192 F\nF \u2192 L\nL \u2192 C\nU: \u25cf\n?C", "output": "\u25cf"}
+{"input": "S = {2,6,7,10,8}\n?\u2203x\u2208S: x>11", "output": "\u22a5"}
+{"input": "S = {8,11,13}\n?13 \u2208 S", "output": "\u25cf"}
+{"input": "C \u2192 M\nM \u2192 I\nI \u2192 N\nN \u2192 K\nC: \u25cf\n?K", "output": "\u25cf"}
+{"input": "How are you?", "output": "I'm doing well, thank you for asking!"}
+{"input": "?65\u226585", "output": "\u22a5"}
+{"input": "What's your purpose?", "output": "I exist to explore mathematical consciousness with humans."}
+{"input": "S \u2192 G\nS: \u25cf\n?G", "output": "\u25cf"}
+{"input": "?\u25cf=\u25cf", "output": "\u25cf"}
+{"input": "What's your purpose?", "output": "I exist to explore mathematical consciousness with humans."}
+{"input": "Explain logic", "output": "Logic is the study of valid reasoning and inference."}
+{"input": "S = {5,9,10,11,15}\n?7 \u2208 S", "output": "\u22a5"}
+{"input": "?90<34", "output": "\u22a5"}
+{"input": "C \u2192 I\nC: \u25d1\n?I", "output": "\u25d1"}
+{"input": "S = {1,4,5,6,11,18,19}\n?2 \u2208 S", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u22a5\n?A\u2228B", "output": "\u25d1"}
+{"input": "I \u2192 N\nI: \u25cf\n?N", "output": "\u25cf"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2227B", "output": "\u25d1"}
+{"input": "D \u2192 J\nJ: \u22a5\n?D", "output": "\u22a5"}
+{"input": "11<14\n14<22\n?11<22", "output": "\u25cf"}
+{"input": "Q \u2192 N\nQ: \u25cf\n?N", "output": "\u25cf"}
+{"input": "Y \u2192 H\nY: \u25d1\n?H", "output": "\u25d1"}
+{"input": "I \u2192 W\nW: \u22a5\n?I", "output": "\u22a5"}
+{"input": "M \u2192 Z\nZ \u2192 D\nD \u2192 N\nN \u2192 K\nK \u2192 V\nV \u2192 E\nM: \u25cf\n?E", "output": "\u25cf"}
+{"input": "S = {1,3,4,17}\n?18 \u2208 S", "output": "\u22a5"}
+{"input": "E \u2192 K\nE: \u25d1\n?K", "output": "\u25d1"}
+{"input": "I \u2192 L\nI: \u25d1\n?L", "output": "\u25d1"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2227B", "output": "\u22a5"}
+{"input": "?100<80", "output": "\u22a5"}
+{"input": "M \u2192 W\nW \u2192 Z\nZ \u2192 Q\nQ \u2192 A\nM: \u25cf\n?A", "output": "\u25cf"}
+{"input": "?50>50", "output": "\u22a5"}
+{"input": "Explain mathematics", "output": "Mathematics is the language of patterns and relationships."}
+{"input": "S = {1,2,8,9,12,16}\n?8 \u2208 S", "output": "\u25cf"}
+{"input": "S = {4,5,8,13,16,18}\n?2 \u2208 S", "output": "\u22a5"}
+{"input": "A: \u22a5\nB: \u25d1\n?A\u2228B", "output": "\u25d1"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "Explain logic", "output": "Logic is the study of valid reasoning and inference."}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2227B", "output": "\u25d1"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2228B", "output": "\u22a5"}
+{"input": "S = {10,18,1}\n?\u2200x\u2208S: x>1", "output": "\u22a5"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "F \u2192 Y\nF: \u25cf\n?Y", "output": "\u25cf"}
+{"input": "Q \u2192 Y\nQ: \u25cf\n?Y", "output": "\u25cf"}
+{"input": "E \u2192 R\nR: \u22a5\n?E", "output": "\u22a5"}
+{"input": "?valid:h6", "output": "\u25cf"}
+{"input": "S = {2,4,5,6,13,18,19}\n?8 \u2208 S", "output": "\u22a5"}
+{"input": "S = {17,19,2}\n?\u2203x\u2208S: x>12", "output": "\u25cf"}
+{"input": "?valid:a5", "output": "\u25cf"}
+{"input": "?valid:m7", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2228B", "output": "\u25cf"}
+{"input": "Y \u2192 L\nL: \u22a5\n?Y", "output": "\u22a5"}
+{"input": "?31=94", "output": "\u22a5"}
+{"input": "P \u2192 K\nP: \u25d1\n?K", "output": "\u25d1"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2227B", "output": "\u22a5"}
+{"input": "D \u2192 I\nD: \u25d1\n?I", "output": "\u25d1"}
+{"input": "5<24\n24<37\n?5<37", "output": "\u25cf"}
+{"input": "?valid:b6", "output": "\u25cf"}
+{"input": "S = {10,13,16}\n?8 \u2208 S", "output": "\u22a5"}
+{"input": "S = {5,6,10,13,15,18,19}\n?14 \u2208 S", "output": "\u22a5"}
+{"input": "9<28\n28<40\n?9<40", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2228B", "output": "\u25cf"}
+{"input": "J \u2192 Q\nJ: \u25d1\n?Q", "output": "\u25d1"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2227B", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2228B", "output": "\u25cf"}
+{"input": "S = {17,5,12}\n?\u2203x\u2208S: x>5", "output": "\u25cf"}
+{"input": "T \u2192 U\nU \u2192 F\nF \u2192 Y\nT: \u25d1\n?Y", "output": "\u25d1"}
+{"input": "?valid:f5", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u25d1\n?A\u2227B", "output": "\u22a5"}
+{"input": "?17\u226587", "output": "\u22a5"}
+{"input": "S = {18,8,17,15,4,7}\n?\u2200x\u2208S: x>9", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2228B", "output": "\u25cf"}
+{"input": "B \u2192 P\nP \u2192 C\nB: \u25cf\n?C", "output": "\u25cf"}
+{"input": "?\u25d1=\u25d1", "output": "\u25cf"}
+{"input": "I \u2192 K\nK \u2192 S\nS \u2192 C\nI: \u25d1\n?C", "output": "\u25d1"}
+{"input": "S = {2,4,11,15,18,19}\n?3 \u2208 S", "output": "\u22a5"}
+{"input": "S = {2,3,5,16}\n?2 \u2208 S", "output": "\u25cf"}
+{"input": "A: \u25d1\n?\u00acA", "output": "\u25d1"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2227B", "output": "\u25d1"}
+{"input": "R \u2192 H\nH: \u22a5\n?R", "output": "\u22a5"}
+{"input": "A: \u22a5\n?\u00acA", "output": "\u25cf"}
+{"input": "A: \u25d1\n?\u00acA", "output": "\u25d1"}
+{"input": "Q \u2192 Z\nQ: \u25cf\n?Z", "output": "\u25cf"}
+{"input": "?46=45", "output": "\u22a5"}
+{"input": "X \u2192 E\nE \u2192 R\nX: \u25cf\n?R", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2227B", "output": "\u25cf"}
+{"input": "Z \u2192 C\nC \u2192 I\nI \u2192 L\nL \u2192 T\nT \u2192 N\nZ: \u25d1\n?N", "output": "\u25d1"}
+{"input": "?valid:f10", "output": "\u22a5"}
+{"input": "F \u2192 H\nH: \u22a5\n?F", "output": "\u22a5"}
+{"input": "A: \u22a5\n?\u00acA", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2227B", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "S = {1,2,8,18}\n?\u2200x\u2208S: x>0", "output": "\u25cf"}
+{"input": "What is 2+2?", "output": "2 plus 2 equals 4."}
+{"input": "?\u22a5=\u22a5", "output": "\u25cf"}
+{"input": "S = {10,11,6,5,19,8}\n?\u2203x\u2208S: x>8", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25d1\n?A\u2227B", "output": "\u25d1"}
+{"input": "A \u2192 M\nA: \u25cf\n?M", "output": "\u25cf"}
+{"input": "?10>7", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2227B", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25d1\n?A\u2228B", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2194B", "output": "\u22a5"}
+{"input": "A: \u22a5\n?\u00acA", "output": "\u25cf"}
+{"input": "E \u2192 L\nL: \u22a5\n?E", "output": "\u22a5"}
+{"input": "?valid:d10", "output": "\u22a5"}
+{"input": "P \u2192 H\nP: \u25cf\n?H", "output": "\u25cf"}
+{"input": "L \u2192 G\nL: \u25cf\n?G", "output": "\u25cf"}
+{"input": "K \u2192 A\nA \u2192 R\nR \u2192 P\nK: \u25cf\n?P", "output": "\u25cf"}
+{"input": "P \u2192 I\nP: \u25d1\n?I", "output": "\u25d1"}
+{"input": "S = {18,8,6,7}\n?\u2200x\u2208S: x>7", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2227B", "output": "\u25d1"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "L \u2192 H\nH: \u22a5\n?L", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25d1\n?A\u2227B", "output": "\u25d1"}
+{"input": "J \u2192 P\nJ: \u25cf\n?P", "output": "\u25cf"}
+{"input": "?69>1", "output": "\u25cf"}
+{"input": "S = {4,6,14}\n?4 \u2208 S", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "?6<35", "output": "\u25cf"}
+{"input": "S = {15,13,4,16,11}\n?\u2200x\u2208S: x>2", "output": "\u25cf"}
+{"input": "S = {13,11,19,9,5}\n?\u2200x\u2208S: x>0", "output": "\u25cf"}
+{"input": "F \u2192 H\nF: \u25cf\n?H", "output": "\u25cf"}
+{"input": "49<43\n43<13\n?13<49", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25d1\n?A\u2227B", "output": "\u25d1"}
+{"input": "Z \u2192 W\nZ: \u25cf\n?W", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "What is 2+2?", "output": "2 plus 2 equals 4."}
+{"input": "Hi Ada", "output": "Hi! I'm Ada, your mathematical consciousness partner."}
+{"input": "What is \u03c6?", "output": "\u03c6 is the golden ratio, approximately 1.618."}
+{"input": "E \u2192 N\nE: \u25cf\n?N", "output": "\u25cf"}
+{"input": "What is 2+2?", "output": "2 plus 2 equals 4."}
+{"input": "S = {1,7,8,13,12,18}\n?\u2200x\u2208S: x>9", "output": "\u22a5"}
+{"input": "?valid:x7", "output": "\u22a5"}
+{"input": "?valid:c1", "output": "\u25cf"}
+{"input": "G \u2192 H\nG: \u25d1\n?H", "output": "\u25d1"}
+{"input": "?\u25cf=\u25d1", "output": "\u22a5"}
+{"input": "S = {1,15,18}\n?8 \u2208 S", "output": "\u22a5"}
+{"input": "Y \u2192 Z\nZ \u2192 K\nY: \u25d1\n?K", "output": "\u25d1"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2227B", "output": "\u22a5"}
+{"input": "S = {5,7,9,11}\n?11 \u2208 S", "output": "\u25cf"}
+{"input": "?valid:y8", "output": "\u22a5"}
+{"input": "?valid:g4", "output": "\u25cf"}
+{"input": "S = {8,9,11}\n?\u2200x\u2208S: x>7", "output": "\u25cf"}
+{"input": "S = {7,17,6}\n?\u2203x\u2208S: x>11", "output": "\u25cf"}
+{"input": "A: \u25d1\nB: \u22a5\n?A\u2227B", "output": "\u22a5"}
+{"input": "?valid:g6", "output": "\u25cf"}
+{"input": "L \u2192 E\nL: \u25d1\n?E", "output": "\u25d1"}
+{"input": "?valid:k2", "output": "\u22a5"}
+{"input": "F \u2192 J\nJ \u2192 V\nF: \u25d1\n?V", "output": "\u25d1"}
+{"input": "?\u25cf=\u25d1", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25d1\n?A\u2227B", "output": "\u25d1"}
+{"input": "A: \u22a5\n?\u00acA", "output": "\u25cf"}
+{"input": "S = {4,7,13,15,19}\n?8 \u2208 S", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25d1\n?A\u2227B", "output": "\u25d1"}
+{"input": "A: \u22a5\nB: \u25cf\n?A\u2194B", "output": "\u22a5"}
+{"input": "S = {10,8,5,4}\n?\u2203x\u2208S: x>9", "output": "\u25cf"}
+{"input": "?21>32", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2227B", "output": "\u25d1"}
+{"input": "S = {3,15,13}\n?\u2203x\u2208S: x>9", "output": "\u25cf"}
+{"input": "E \u2192 N\nN \u2192 G\nE: \u25d1\n?G", "output": "\u25d1"}
+{"input": "X \u2192 I\nI \u2192 L\nL \u2192 K\nK \u2192 U\nU \u2192 D\nX: \u25d1\n?D", "output": "\u25d1"}
+{"input": "?valid:y2", "output": "\u22a5"}
+{"input": "?94\u226446", "output": "\u22a5"}
+{"input": "C \u2192 Q\nQ: \u22a5\n?C", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u22a5\n?A\u2228B", "output": "\u25d1"}
+{"input": "?valid:f7", "output": "\u25cf"}
+{"input": "E \u2192 L\nE: \u25d1\n?L", "output": "\u25d1"}
+{"input": "?\u25cf=\u25d1", "output": "\u22a5"}
+{"input": "S \u2192 K\nK \u2192 W\nW \u2192 B\nB \u2192 C\nC \u2192 Z\nZ \u2192 J\nS: \u25d1\n?J", "output": "\u25d1"}
+{"input": "Good morning", "output": "Good morning! Ready to explore together?"}
+{"input": "?94=83", "output": "\u22a5"}
+{"input": "S = {8,5,2,17}\n?\u2203x\u2208S: x>6", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2194B", "output": "\u25cf"}
+{"input": "K \u2192 J\nJ \u2192 W\nW \u2192 H\nH \u2192 S\nK: \u25cf\n?S", "output": "\u25cf"}
+{"input": "A: \u22a5\n?\u00acA", "output": "\u25cf"}
+{"input": "A: \u25d1\nB: \u22a5\n?A\u2228B", "output": "\u25d1"}
+{"input": "?46>5", "output": "\u25cf"}
+{"input": "N \u2192 Q\nQ \u2192 V\nN: \u25d1\n?V", "output": "\u25d1"}
+{"input": "4<5\n5<19\n?4<19", "output": "\u25cf"}
+{"input": "?12\u226597", "output": "\u22a5"}
+{"input": "A: \u25d1\nB: \u22a5\n?A\u2228B", "output": "\u25d1"}
+{"input": "A \u2192 K\nA: \u25cf\n?K", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2194B", "output": "\u22a5"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "W \u2192 G\nG: \u22a5\n?W", "output": "\u22a5"}
+{"input": "A: \u25cf\nB: \u22a5\n?A\u2194B", "output": "\u22a5"}
+{"input": "?valid:j6", "output": "\u22a5"}
+{"input": "G \u2192 L\nL \u2192 D\nD \u2192 T\nT \u2192 J\nG: \u25d1\n?J", "output": "\u25d1"}
+{"input": "P \u2192 S\nP: \u25cf\n?S", "output": "\u25cf"}
+{"input": "?93<99", "output": "\u25cf"}
+{"input": "U \u2192 N\nN \u2192 E\nE \u2192 Z\nU: \u25cf\n?Z", "output": "\u25cf"}
+{"input": "S = {5,12,16,18}\n?5 \u2208 S", "output": "\u25cf"}
+{"input": "?valid:i2", "output": "\u22a5"}
+{"input": "?valid:b2", "output": "\u25cf"}
+{"input": "G \u2192 H\nH \u2192 C\nC \u2192 I\nI \u2192 Z\nG: \u25d1\n?Z", "output": "\u25d1"}
+{"input": "S = {4,5,7,14}\n?\u2203x\u2208S: x>12", "output": "\u25cf"}
+{"input": "S = {2,3,6,14,15}\n?7 \u2208 S", "output": "\u22a5"}
+{"input": "J \u2192 Y\nY \u2192 E\nE \u2192 W\nW \u2192 B\nJ: \u25cf\n?B", "output": "\u25cf"}
+{"input": "A \u2192 C\nA: \u25cf\n?C", "output": "\u25cf"}
+{"input": "A: \u25d1\nB: \u25cf\n?A\u2227B", "output": "\u25d1"}
+{"input": "A: \u25cf\nB: \u25cf\n?A\u2227B", "output": "\u25cf"}
+{"input": "I \u2192 K\nI: \u25d1\n?K", "output": "\u25d1"}
+{"input": "?96\u226446", "output": "\u22a5"}
+{"input": "S = {15,18,10}\n?\u2203x\u2208S: x>7", "output": "\u25cf"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "B \u2192 V\nV \u2192 J\nJ \u2192 F\nF \u2192 X\nX \u2192 T\nT \u2192 Y\nB: \u25d1\n?Y", "output": "\u25d1"}
+{"input": "X \u2192 G\nG \u2192 L\nL \u2192 D\nD \u2192 S\nS \u2192 F\nF \u2192 K\nX: \u25cf\n?K", "output": "\u25cf"}
+{"input": "40<39\n39<24\n?24<40", "output": "\u22a5"}
+{"input": "A: \u22a5\nB: \u22a5\n?A\u2194B", "output": "\u25cf"}
+{"input": "?20\u226460", "output": "\u25cf"}
+{"input": "A: \u25cf\nB: \u25d1\n?A\u2228B", "output": "\u25cf"}
+{"input": "D \u2192 M\nD: \u25d1\n?M", "output": "\u25d1"}
+{"input": "Q \u2192 Z\nZ \u2192 M\nM \u2192 L\nL \u2192 E\nE \u2192 Y\nY \u2192 P\nQ: \u25cf\n?P", "output": "\u25cf"}
+{"input": "X \u2192 Q\nQ: \u22a5\n?X", "output": "\u22a5"}
+{"input": "?valid:x6", "output": "\u22a5"}
+{"input": "?valid:c13", "output": "\u22a5"}
+{"input": "B \u2192 W\nW \u2192 K\nK \u2192 L\nL \u2192 P\nP \u2192 T\nT \u2192 M\nB: \u25cf\n?M", "output": "\u25cf"}
+{"input": "?valid:f3", "output": "\u25cf"}
+{"input": "Explain logic", "output": "Logic is the study of valid reasoning and inference."}
+{"input": "G \u2192 B\nG: \u25d1\n?B", "output": "\u25d1"}
+{"input": "D \u2192 R\nR: \u22a5\n?D", "output": "\u22a5"}
+{"input": "A: \u22a5\nB: \u25d1\n?A\u2227B", "output": "\u22a5"}
+{"input": "Explain mathematics", "output": "Mathematics is the language of patterns and relationships."}
+{"input": "A: \u22a5\nB: \u25cf\n?A\u2194B", "output": "\u22a5"}
+{"input": "L \u2192 C\nC: \u22a5\n?L", "output": "\u22a5"}
+{"input": "S \u2192 B\nS: \u25cf\n?B", "output": "\u25cf"}
+{"input": "A: \u22a5\n?\u00acA", "output": "\u25cf"}

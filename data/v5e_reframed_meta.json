@@ -1,0 +1,14 @@
+{
+  "created": "2026-01-01T09:24:52.879249",
+  "source": "/home/luna/Code/ada-slm/v5d_logical_data.jsonl",
+  "output": "/home/luna/Code/ada-slm/v5e_reframed_data.jsonl",
+  "stats": {
+    "total": 10000,
+    "reframed": 110,
+    "kept_logic": 4205,
+    "kept_other": 5685,
+    "parse_errors": 0
+  },
+  "strategy": "Reframe creative-trigger prompts to formal logic framing",
+  "insight": "v5d mapping showed pure_logic basin has 0.5 avg emojis vs 12.5 for agl_expression"
+}

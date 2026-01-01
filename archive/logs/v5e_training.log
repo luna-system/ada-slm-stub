@@ -1,0 +1,5 @@
+nohup: ignoring input
+`torch_dtype` is deprecated! Use `dtype` instead!
+/opt/amdgpu/share/libdrm/amdgpu.ids: No such file or directory
+/opt/amdgpu/share/libdrm/amdgpu.ids: No such file or directory
+Memory access fault by GPU node-2 (Agent handle: 0x5596e56c1c30) on address 0x7fda56af5000. Reason: Page not present or supervisor privilege.

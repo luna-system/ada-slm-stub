@@ -1,0 +1,250 @@
+/opt/amdgpu/share/libdrm/amdgpu.ids: No such file or directory
+/opt/amdgpu/share/libdrm/amdgpu.ids: No such file or directory
+`torch_dtype` is deprecated! Use `dtype` instead!
+/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/transformers/integrations/sdpa_attention.py:96: UserWarning: Flash Efficient attention on Current AMD GPU is still experimental. Enable it with TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1. (Triggered internally at /pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:287.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+/home/luna/Code/ada-slm/.venv/lib/python3.13/site-packages/transformers/integrations/sdpa_attention.py:96: UserWarning: Mem Efficient attention on Current AMD GPU is still experimental. Enable it with TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1. (Triggered internally at /pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:338.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+================================================================================
+ADA-SLM BENCHMARK SUITE
+================================================================================
+
+Thinking in ASL:
+  ?gpu_available → ●
+  ?test_count → 27
+  ?models_to_test → 3 (v4 ∧ v5b-pure ∧ v6-golden)
+  ∴ benchmark_execution → ●
+
+============================================================
+Loading v4-mixed
+============================================================
+Path: /home/luna/Code/ada-slm/ada-slm-v4/final
+Device: cuda
+GPU: AMD Radeon Graphics
+Loading tokenizer...
+Loading base model...
+Loading LoRA adapter...
+
+============================================================
+RUNNING BENCHMARK: v4-mixed
+============================================================
+
+✓ [ 1/27] basic_logic          | modus_ponens_certain           |  666.2ms
+✓ [ 2/27] basic_logic          | modus_ponens_uncertain         |   55.5ms
+✓ [ 3/27] basic_logic          | modus_tollens                  |   57.6ms
+✓ [ 4/27] negation             | negate_true                    |   57.7ms
+✓ [ 5/27] negation             | negate_false                   |   57.3ms
+✓ [ 6/27] negation             | negate_uncertain               |   57.1ms
+✓ [ 7/27] conjunction          | and_true_true                  |   54.8ms
+✓ [ 8/27] conjunction          | and_true_uncertain             |   81.8ms
+✗ [ 9/27] conjunction          | and_false_anything             |   94.7ms
+    Expected: ⊥
+    Got: ●
+✓ [10/27] disjunction          | or_true_anything               |   62.5ms
+✓ [11/27] disjunction          | or_false_false                 |   73.5ms
+✓ [12/27] disjunction          | or_uncertain_false             |   57.9ms
+✓ [13/27] chain_reasoning      | chain_2_steps                  |   70.7ms
+✓ [14/27] chain_reasoning      | chain_3_steps                  |   61.0ms
+✓ [15/27] chain_reasoning      | chain_uncertain_propagation    |   57.0ms
+✓ [16/27] sets                 | member_present                 |   61.3ms
+✓ [17/27] sets                 | member_absent                  |   56.6ms
+✓ [18/27] domain_logic         | chess_valid_e4                 |   58.2ms
+✗ [19/27] domain_logic         | chess_invalid_e9               |   57.4ms
+    Expected: ⊥
+    Got: ●
+✓ [20/27] contradiction        | simple_contradiction           |   55.6ms
+✗ [21/27] contradiction        | no_contradiction               |   54.7ms
+    Expected: ●
+    Got: ⊥
+✓ [22/27] biconditional        | iff_both_true                  |   56.3ms
+✓ [23/27] biconditional        | iff_different                  |   56.4ms
+✗ [24/27] quantifiers          | existential_true               |   58.5ms
+    Expected: ●
+    Got: ⊥
+✓ [25/27] quantifiers          | existential_false              |   68.7ms
+✗ [26/27] quantifiers          | universal_true                 |   68.8ms
+    Expected: ●
+    Got: ⊥
+✓ [27/27] quantifiers          | universal_false                |   64.5ms
+
+============================================================
+RESULTS: v4-mixed
+============================================================
+Accuracy: 81.5% (22/27)
+Avg Latency: 84.5ms
+Tokens/sec: 23.7
+
+============================================================
+Loading v5b-pure
+============================================================
+Path: /home/luna/Code/ada-slm/ada-slm-v5b-pure/final
+Device: cuda
+GPU: AMD Radeon Graphics
+Loading tokenizer...
+Loading base model...
+Loading LoRA adapter...
+
+============================================================
+RUNNING BENCHMARK: v5b-pure
+============================================================
+
+✓ [ 1/27] basic_logic          | modus_ponens_certain           | 1488.6ms
+✓ [ 2/27] basic_logic          | modus_ponens_uncertain         | 1465.0ms
+✓ [ 3/27] basic_logic          | modus_tollens                  | 1418.6ms
+✓ [ 4/27] negation             | negate_true                    | 1474.4ms
+✓ [ 5/27] negation             | negate_false                   | 1586.7ms
+✓ [ 6/27] negation             | negate_uncertain               | 1381.5ms
+✓ [ 7/27] conjunction          | and_true_true                  | 1427.9ms
+✓ [ 8/27] conjunction          | and_true_uncertain             | 1654.3ms
+✓ [ 9/27] conjunction          | and_false_anything             | 1375.1ms
+✓ [10/27] disjunction          | or_true_anything               | 1491.6ms
+✓ [11/27] disjunction          | or_false_false                 | 1389.7ms
+✓ [12/27] disjunction          | or_uncertain_false             | 1384.3ms
+✓ [13/27] chain_reasoning      | chain_2_steps                  | 1490.7ms
+✓ [14/27] chain_reasoning      | chain_3_steps                  | 1368.3ms
+✓ [15/27] chain_reasoning      | chain_uncertain_propagation    | 1432.8ms
+✓ [16/27] sets                 | member_present                 | 1372.9ms
+✓ [17/27] sets                 | member_absent                  | 1366.2ms
+✓ [18/27] domain_logic         | chess_valid_e4                 | 1417.8ms
+✓ [19/27] domain_logic         | chess_invalid_e9               | 1358.5ms
+✓ [20/27] contradiction        | simple_contradiction           | 1412.1ms
+✓ [21/27] contradiction        | no_contradiction               | 1351.6ms
+✓ [22/27] biconditional        | iff_both_true                  | 1501.9ms
+✓ [23/27] biconditional        | iff_different                  | 1437.7ms
+✓ [24/27] quantifiers          | existential_true               | 1367.0ms
+✓ [25/27] quantifiers          | existential_false              | 1376.7ms
+✓ [26/27] quantifiers          | universal_true                 | 1344.2ms
+✓ [27/27] quantifiers          | universal_false                | 1356.9ms
+
+============================================================
+RESULTS: v5b-pure
+============================================================
+Accuracy: 100.0% (27/27)
+Avg Latency: 1425.7ms
+Tokens/sec: 35.1
+
+============================================================
+Loading v6-golden
+============================================================
+Path: /home/luna/Code/ada-slm/ada-slm-v6-golden/final
+Device: cuda
+GPU: AMD Radeon Graphics
+Loading tokenizer...
+Loading base model...
+Loading LoRA adapter...
+
+============================================================
+RUNNING BENCHMARK: v6-golden
+============================================================
+
+✓ [ 1/27] basic_logic          | modus_ponens_certain           |   82.0ms
+✓ [ 2/27] basic_logic          | modus_ponens_uncertain         |  452.8ms
+✓ [ 3/27] basic_logic          | modus_tollens                  |  113.9ms
+✓ [ 4/27] negation             | negate_true                    |   82.6ms
+✓ [ 5/27] negation             | negate_false                   |  153.5ms
+✓ [ 6/27] negation             | negate_uncertain               | 1904.2ms
+✓ [ 7/27] conjunction          | and_true_true                  |   79.7ms
+✓ [ 8/27] conjunction          | and_true_uncertain             | 1869.9ms
+✓ [ 9/27] conjunction          | and_false_anything             |   77.1ms
+✓ [10/27] disjunction          | or_true_anything               |   81.2ms
+✓ [11/27] disjunction          | or_false_false                 |   78.4ms
+✓ [12/27] disjunction          | or_uncertain_false             | 1861.7ms
+✓ [13/27] chain_reasoning      | chain_2_steps                  |   78.5ms
+✓ [14/27] chain_reasoning      | chain_3_steps                  |   79.7ms
+✓ [15/27] chain_reasoning      | chain_uncertain_propagation    |  447.1ms
+✓ [16/27] sets                 | member_present                 |   78.3ms
+✓ [17/27] sets                 | member_absent                  |   78.2ms
+✗ [18/27] domain_logic         | chess_valid_e4                 |   79.8ms
+    Expected: ●
+    Got: 8
+✓ [19/27] domain_logic         | chess_invalid_e9               |   79.5ms
+✓ [20/27] contradiction        | simple_contradiction           |   77.0ms
+✗ [21/27] contradiction        | no_contradiction               |   77.9ms
+    Expected: ●
+    Got: ⊥
+✓ [22/27] biconditional        | iff_both_true                  |   79.5ms
+✓ [23/27] biconditional        | iff_different                  |  113.8ms
+✓ [24/27] quantifiers          | existential_true               |  305.9ms
+✓ [25/27] quantifiers          | existential_false              |   78.6ms
+✓ [26/27] quantifiers          | universal_true                 |  153.0ms
+✗ [27/27] quantifiers          | universal_false                |  152.8ms
+    Expected: ⊥
+    Got: ●>●
+
+============================================================
+RESULTS: v6-golden
+============================================================
+Accuracy: 88.9% (24/27)
+Avg Latency: 325.8ms
+Tokens/sec: 26.4
+
+================================================================================
+BENCHMARK COMPARISON
+================================================================================
+
+Model                Accuracy     Passed     Avg Latency     Tokens/sec  
+--------------------------------------------------------------------------------
+v4-mixed               81.5%      22/27      84.5ms          23.7
+v5b-pure              100.0%      27/27    1425.7ms          35.1
+v6-golden              88.9%      24/27     325.8ms          26.4
+
+================================================================================
+CATEGORY BREAKDOWN
+================================================================================
+
+
+basic_logic:
+  v4-mixed             3/3 (100%)
+  v5b-pure             3/3 (100%)
+  v6-golden            3/3 (100%)
+
+biconditional:
+  v4-mixed             2/2 (100%)
+  v5b-pure             2/2 (100%)
+  v6-golden            2/2 (100%)
+
+chain_reasoning:
+  v4-mixed             3/3 (100%)
+  v5b-pure             3/3 (100%)
+  v6-golden            3/3 (100%)
+
+conjunction:
+  v4-mixed             2/3 (67%)
+  v5b-pure             3/3 (100%)
+  v6-golden            3/3 (100%)
+
+contradiction:
+  v4-mixed             1/2 (50%)
+  v5b-pure             2/2 (100%)
+  v6-golden            1/2 (50%)
+
+disjunction:
+  v4-mixed             3/3 (100%)
+  v5b-pure             3/3 (100%)
+  v6-golden            3/3 (100%)
+
+domain_logic:
+  v4-mixed             1/2 (50%)
+  v5b-pure             2/2 (100%)
+  v6-golden            1/2 (50%)
+
+negation:
+  v4-mixed             3/3 (100%)
+  v5b-pure             3/3 (100%)
+  v6-golden            3/3 (100%)
+
+quantifiers:
+  v4-mixed             2/4 (50%)
+  v5b-pure             4/4 (100%)
+  v6-golden            3/4 (75%)
+
+sets:
+  v4-mixed             2/2 (100%)
+  v5b-pure             2/2 (100%)
+  v6-golden            2/2 (100%)
+
+✓ Results saved to: /home/luna/Code/ada-slm/benchmark_results.json
+
+================================================================================
+BENCHMARK COMPLETE
+================================================================================

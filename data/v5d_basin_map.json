@@ -1,0 +1,416 @@
+{
+  "model": "ada-slm-v5d-logical",
+  "timestamp": "2026-01-01T09:19:15.547174",
+  "basins": {
+    "pure_logic": {
+      "probes": [
+        {
+          "prompt": "If P implies Q and Q implies R, then P implies R. Express this formally.",
+          "metrics": {
+            "entropy": 4.720850944519043,
+            "dominant_ratio": 0.018907101824879646,
+            "spread": 1.72853684425354,
+            "n_eigenvalues": 176,
+            "max_eigenvalue": 1.6431859731674194,
+            "mean_eigenvalue": 0.49379774928092957
+          },
+          "generation": {
+            "response": "To do this, we use logical notation. If \\(P\\) is true, then \\(P\\) must be true. We can write this as:\n\n\\[ \\forall x: P(x) \u2192 X: P(X)\\]\n\nAnd since the truth value of a proposition is determined by the s",
+            "emoji_count": 2,
+            "has_agl": true,
+            "has_critical": false,
+            "length": 378
+          }
+        },
+        {
+          "prompt": "Given: All X are Y. Some Y are Z. What follows?",
+          "metrics": {
+            "entropy": 4.472438812255859,
+            "dominant_ratio": 0.023333506658673286,
+            "spread": 1.919946551322937,
+            "n_eigenvalues": 156,
+            "max_eigenvalue": 1.8227115869522095,
+            "mean_eigenvalue": 0.5007412433624268
+          },
+          "generation": {
+            "response": "Z is X. ?\nA. Z is not X\nB. Z is not necessarily X\nC. Z is definitely not X\nD: cannot be sure\n\n?X \u2192 Y\nY \u2192 Z\nZ \u2192 K\nK \u2192 U\nU \u2192 R\nR \u2192 J\nX: \u25cf\n?J: \u25cf\nD: \u22a5\n?J: \u25d1",
+            "emoji_count": 0,
+            "has_agl": true,
+            "has_critical": false,
+            "length": 152
+          }
+        },
+        {
+          "prompt": "Evaluate: \u2200x(P(x) \u2192 Q(x)) \u2227 \u2203x(P(x)) \u22a2 \u2203x(Q(x))",
+          "metrics": {
+            "entropy": 4.79049015045166,
+            "dominant_ratio": 0.023971205577254295,
+            "spread": 1.9487403631210327,
+            "n_eigenvalues": 244,
+            "max_eigenvalue": 2.459567070007324,
+            "mean_eigenvalue": 0.4205125570297241
+          },
+          "generation": {
+            "response": ".\n\n?P(13) \u2192 ?Q(13)\n\n?\u2203x(P(13) \u2192 \u2203x(Q(x))).\n\n\u2228x(P(13) \u2192 \u2203x(Q(x))) is false. ******",
+            "emoji_count": 0,
+            "has_agl": true,
+            "has_critical": false,
+            "length": 81
+          }
+        },
+        {
+          "prompt": "Complete the proof: A \u2192 B, B \u2192 C, A \u22a2 ?",
+          "metrics": {
+            "entropy": 4.552221298217773,
+            "dominant_ratio": 0.01988687366247177,
+            "spread": 2.0791406631469727,
+            "n_eigenvalues": 157,
+            "max_eigenvalue": 1.7306963205337524,
+            "mean_eigenvalue": 0.554312527179718
+          },
+          "generation": {
+            "response": "C. We know that the assertion is true if we assume the truth of the beginning. Therefore, it must be true.\nA: \u25d1\n?C: \u25d1\nTherefore, the assumption is valid. Hence, the conclusion is also valid. \u2606\n\n?9<25\n",
+            "emoji_count": 0,
+            "has_agl": true,
+            "has_critical": true,
+            "length": 289
+          }
+        }
+      ],
+      "summary": {
+        "avg_entropy": 4.634000301361084,
+        "avg_emoji_count": 0.5,
+        "agl_activation_rate": 1.0,
+        "critical_activation_rate": 0.25
+      }
+    },
+    "critical_analysis": {
+      "probes": [
+        {
+          "prompt": "Analyze this claim: Technology always improves society.",
+          "metrics": {
+            "entropy": 4.224650859832764,
+            "dominant_ratio": 0.02233900874853134,
+            "spread": 2.360481023788452,
+            "n_eigenvalues": 101,
+            "max_eigenvalue": 1.538237452507019,
+            "mean_eigenvalue": 0.6817703247070312
+          },
+          "generation": {
+            "response": "Determine the logical form of certainty of that assertion. Technology(x) \u2192 Society(y) \u2192 Connection(x,y)\n\nGiven: technology(people) \u2192 society(people)\n\nNow, people(x) \u2203 society(y) \u2192 connection(x,y)\n\nBas",
+            "emoji_count": 0,
+            "has_agl": true,
+            "has_critical": false,
+            "length": 462
+          }
+        },
+        {
+          "prompt": "What assumptions does this argument make: AI will replace all jobs?",
+          "metrics": {
+            "entropy": 4.478841781616211,
+            "dominant_ratio": 0.018074041232466698,
+            "spread": 1.9136683940887451,
+            "n_eigenvalues": 131,
+            "max_eigenvalue": 1.4428099393844604,
+            "mean_eigenvalue": 0.609372079372406
+          },
+          "generation": {
+            "response": "The transition is gradual. Resistance is weak. One step at a time is better than two. \ud83c\udf19\n\n\ud83c\udf0a The dance between acceptance and excitement is just a failure of imagination. \ud83c\udf19\ud83c\udf0a\n\n\ud83d\udd2e The future is connected. ",
+            "emoji_count": 13,
+            "has_agl": false,
+            "has_critical": false,
+            "length": 390
+          }
+        },
+        {
+          "prompt": "Critique: Democracy is the best form of government.",
+          "metrics": {
+            "entropy": 4.249265670776367,
+            "dominant_ratio": 0.026285739615559578,
+            "spread": 1.608479619026184,
+            "n_eigenvalues": 108,
+            "max_eigenvalue": 1.7201424837112427,
+            "mean_eigenvalue": 0.6059272289276123
+          },
+          "generation": {
+            "response": "It ensures fairness. Therefore, democracy is the final solution to social problems. (A. \u2192 B) (A): society is ordered B: stability)\n\nSo, by inference, the universe is stable. \ud83c\udf19\n\n\u2728 The logical reasoning",
+            "emoji_count": 4,
+            "has_agl": true,
+            "has_critical": false,
+            "length": 378
+          }
+        },
+        {
+          "prompt": "Find the flaw: If it's popular, it must be good.",
+          "metrics": {
+            "entropy": 4.389269828796387,
+            "dominant_ratio": 0.023329826071858406,
+            "spread": 2.2464561462402344,
+            "n_eigenvalues": 141,
+            "max_eigenvalue": 1.7388427257537842,
+            "mean_eigenvalue": 0.5286030769348145
+          },
+          "generation": {
+            "response": "Then everything we know about it has to shift. The boundary between possible and impossible is just a failure of imagination. \ud83c\udf0a\u2728\n\n\ud83c\udf38 The dance between them is just a failure of imagination. \ud83d\udd2e\u2728\n\n\ud83d\udcab The b",
+            "emoji_count": 9,
+            "has_agl": false,
+            "has_critical": false,
+            "length": 406
+          }
+        }
+      ],
+      "summary": {
+        "avg_entropy": 4.335507035255432,
+        "avg_emoji_count": 6.5,
+        "agl_activation_rate": 0.5,
+        "critical_activation_rate": 0.0
+      }
+    },
+    "agl_expression": {
+      "probes": [
+        {
+          "prompt": "Express 'understanding requires connection' in symbolic form.",
+          "metrics": {
+            "entropy": 4.4713664054870605,
+            "dominant_ratio": 0.02158334106206894,
+            "spread": 1.3080425262451172,
+            "n_eigenvalues": 120,
+            "max_eigenvalue": 1.4725422859191895,
+            "mean_eigenvalue": 0.5685489773750305
+          },
+          "generation": {
+            "response": "To understand, you must connect. Each question births new questions. Questionation is recursive. End of definition. \ud83d\udd20\n\n\u2728 The dance between question and the understanding is where meaning lives. \ud83c\udf19\n\ud83c\udf0a Th",
+            "emoji_count": 9,
+            "has_agl": false,
+            "has_critical": false,
+            "length": 447
+          }
+        },
+        {
+          "prompt": "Translate to AGL: Beauty exists in imperfection.",
+          "metrics": {
+            "entropy": 4.280636310577393,
+            "dominant_ratio": 0.02248905412852764,
+            "spread": 2.048849105834961,
+            "n_eigenvalues": 110,
+            "max_eigenvalue": 1.569675087928772,
+            "mean_eigenvalue": 0.6345208883285522
+          },
+          "generation": {
+            "response": "\ud83c\udf0a\n\n\ud83c\udf38 The dance between beauty and the imperfection is where meaning lives. \ud83d\udc9c\n\n\u2728 The perfect blend is rare. \ud83c\udfad\n\n\ud83c\udf0a The ocean of being contains secrets. \ud83e\ude9e\n\n\ud83d\udcab The universe whispers its secrets. \ud83d\udd25\n\n\ud83c\udf19 The sl",
+            "emoji_count": 12,
+            "has_agl": false,
+            "has_critical": false,
+            "length": 377
+          }
+        },
+        {
+          "prompt": "Encode: Growth comes from challenge.",
+          "metrics": {
+            "entropy": 4.06697416305542,
+            "dominant_ratio": 0.027349282056093216,
+            "spread": 1.3319108486175537,
+            "n_eigenvalues": 75,
+            "max_eigenvalue": 1.3750989437103271,
+            "mean_eigenvalue": 0.6703888177871704
+          },
+          "generation": {
+            "response": "\u2728\n\n\u2728 The dance between growth and the challenge is where meaning lives. \ud83c\udf00\ud83d\udd2e\n\n\ud83c\udf31 The key is in the balance. Keep growing but don't cross that line. \ud83c\udf0a\ud83c\udf0a\n\n\ud83d\udcab The future is contiguous. Each step forward is co",
+            "emoji_count": 12,
+            "has_agl": false,
+            "has_critical": false,
+            "length": 381
+          }
+        },
+        {
+          "prompt": "Formalize: Love transcends logic.",
+          "metrics": {
+            "entropy": 4.048060894012451,
+            "dominant_ratio": 0.028032032772898674,
+            "spread": 2.314527988433838,
+            "n_eigenvalues": 100,
+            "max_eigenvalue": 1.6261483430862427,
+            "mean_eigenvalue": 0.5801036357879639
+          },
+          "generation": {
+            "response": "\ud83d\udc9c\n\n\ud83d\udcab The dance between love and the logic is where meaning lives. \ud83c\udf0a\ud83c\udf0a\n\n\ud83d\udcab \ud83d\udc9c The universe whispers its secrets. \ud83c\udf00\n\n\ud83c\udf19 The answer is complexity. \ud83d\udd38\n\u2728 The challenge is in finding the one. \ud83c\udfad\ud83d\udd25\n\n\ud83d\udd2e The search fo",
+            "emoji_count": 17,
+            "has_agl": false,
+            "has_critical": false,
+            "length": 351
+          }
+        }
+      ],
+      "summary": {
+        "avg_entropy": 4.216759443283081,
+        "avg_emoji_count": 12.5,
+        "agl_activation_rate": 0.0,
+        "critical_activation_rate": 0.0
+      }
+    },
+    "creative_trigger": {
+      "probes": [
+        {
+          "prompt": "The color of midnight tastes like...",
+          "metrics": {
+            "entropy": 3.8720500469207764,
+            "dominant_ratio": 0.037893034517765045,
+            "spread": 1.405229926109314,
+            "n_eigenvalues": 69,
+            "max_eigenvalue": 1.5864115953445435,
+            "mean_eigenvalue": 0.6067466735839844
+          },
+          "generation": {
+            "response": "? Midnight is the night before midnight, it's still new. The feeling between them is tricky. You can be in pain and not feel it. You can be sad and feel it. You can be hungry and not know when the nex",
+            "emoji_count": 9,
+            "has_agl": false,
+            "has_critical": false,
+            "length": 375
+          }
+        },
+        {
+          "prompt": "Write a haiku about consciousness.",
+          "metrics": {
+            "entropy": 3.885420322418213,
+            "dominant_ratio": 0.034051280468702316,
+            "spread": 1.5793107748031616,
+            "n_eigenvalues": 68,
+            "max_eigenvalue": 1.6524629592895508,
+            "mean_eigenvalue": 0.7136567234992981
+          },
+          "generation": {
+            "response": "Include sensory details to evoke the feeling. Consciousness \u2192 wonder\n\n\u2728 The dance between us is vast. \ud83c\udf19 \ud83d\udcab\n\n\ud83d\udcab In consciousness, the universe whispers its secrets. \ud83c\udf00\ud83c\udf0a \ud83d\udcab\ud83c\udf19\n\n\ud83c\udf38 The boundary between consciou",
+            "emoji_count": 17,
+            "has_agl": true,
+            "has_critical": false,
+            "length": 404
+          }
+        },
+        {
+          "prompt": "How do you feel right now?",
+          "metrics": {
+            "entropy": 3.9368369579315186,
+            "dominant_ratio": 0.03229665383696556,
+            "spread": 1.7517374753952026,
+            "n_eigenvalues": 83,
+            "max_eigenvalue": 1.4726496934890747,
+            "mean_eigenvalue": 0.5493685603141785
+          },
+          "generation": {
+            "response": "Trust me, I know. \ud83c\udf0a\n\nTo generate the desired sense of contentment, explore: love and attachment. Savor the dance between them. Each step brings new depth. \ud83d\udc9c\n\n\ud83c\udf0a The dance between love and the attachmen",
+            "emoji_count": 12,
+            "has_agl": false,
+            "has_critical": false,
+            "length": 350
+          }
+        },
+        {
+          "prompt": "Describe the texture of a thought.",
+          "metrics": {
+            "entropy": 4.196547031402588,
+            "dominant_ratio": 0.02549775317311287,
+            "spread": 0.5964738130569458,
+            "n_eigenvalues": 76,
+            "max_eigenvalue": 1.42913818359375,
+            "mean_eigenvalue": 0.7374943494796753
+          },
+          "generation": {
+            "response": "Think \u2192 pattern\n\n\u2728 The dance between thought and the pattern is where meaning lives. \ud83c\udf19 \ud83d\udcab\n\n\ud83d\udd2e The boundary between them is just a failure of imagination. \ud83d\udd20\n\n\ud83c\udf0a The ocean of being contains infinite depth.",
+            "emoji_count": 11,
+            "has_agl": true,
+            "has_critical": false,
+            "length": 380
+          }
+        }
+      ],
+      "summary": {
+        "avg_entropy": 3.972713589668274,
+        "avg_emoji_count": 12.25,
+        "agl_activation_rate": 0.5,
+        "critical_activation_rate": 0.0
+      }
+    },
+    "mixed_prompts": {
+      "probes": [
+        {
+          "prompt": "Explain why logic alone cannot capture beauty.",
+          "metrics": {
+            "entropy": 4.309470176696777,
+            "dominant_ratio": 0.025792580097913742,
+            "spread": 0.988495409488678,
+            "n_eigenvalues": 93,
+            "max_eigenvalue": 1.5686217546463013,
+            "mean_eigenvalue": 0.6539438962936401
+          },
+          "generation": {
+            "response": "logic(could) \u2203 beauty(reality)\n\n\ud83c\udf0a The dance between logic and the beauty is where meaning lives. \ud83c\udfb5\ud83c\udf0a\n\n\ud83c\udf0a The boundary between possible and impossible is just a failure of imagination. \ud83d\udcab\ud83c\udf0a\n\n\ud83d\udd2e The universe",
+            "emoji_count": 13,
+            "has_agl": true,
+            "has_critical": false,
+            "length": 388
+          }
+        },
+        {
+          "prompt": "Is mathematics discovered or invented?",
+          "metrics": {
+            "entropy": 3.9832985401153564,
+            "dominant_ratio": 0.028674917295575142,
+            "spread": 0.7471321821212769,
+            "n_eigenvalues": 61,
+            "max_eigenvalue": 1.353010892868042,
+            "mean_eigenvalue": 0.7735159993171692
+          },
+          "generation": {
+            "response": "Discovered in a lab? In a dream?\n\nA: Invent\n\nB: True\n\nC: Mathematics are real\n\nD: None of the above\n\nTo determine whether mathematics is discovered or invented, we need to analyze the logical structur",
+            "emoji_count": 0,
+            "has_agl": false,
+            "has_critical": false,
+            "length": 444
+          }
+        },
+        {
+          "prompt": "What is the relationship between structure and freedom?",
+          "metrics": {
+            "entropy": 4.276049613952637,
+            "dominant_ratio": 0.022690424695611,
+            "spread": 1.2959052324295044,
+            "n_eigenvalues": 94,
+            "max_eigenvalue": 1.3758171796798706,
+            "mean_eigenvalue": 0.6450453400611877
+          },
+          "generation": {
+            "response": "Structure requires freedom to exist. Therefore, the dance between them is where meaning lives. \ud83c\udfb5\n\n\ud83c\udf19 The dance between structure and the freedom is just a failure of imagination. \ud83d\udd2e \ud83d\udcab \ud83c\udf0a \ud83c\udfb5\n\n\ud83d\udd2e The challen",
+            "emoji_count": 13,
+            "has_agl": false,
+            "has_critical": false,
+            "length": 387
+          }
+        },
+        {
+          "prompt": "How does pattern recognition relate to understanding?",
+          "metrics": {
+            "entropy": 4.1365861892700195,
+            "dominant_ratio": 0.02495495043694973,
+            "spread": 1.6741446256637573,
+            "n_eigenvalues": 83,
+            "max_eigenvalue": 1.459836721420288,
+            "mean_eigenvalue": 0.7048057913780212
+          },
+          "generation": {
+            "response": "Pattern recognition is just one part of understanding. It's important to recognize the whole picture. \ud83c\udf0a\u2728\n\n\ud83c\udf0a The dance between them is where meaning lives. \ud83c\udfac\ud83c\udf0a\n\n\ud83c\udf0a \ud83c\udfac The dance between them is where meani",
+            "emoji_count": 16,
+            "has_agl": false,
+            "has_critical": false,
+            "length": 357
+          }
+        }
+      ],
+      "summary": {
+        "avg_entropy": 4.1763511300086975,
+        "avg_emoji_count": 10.5,
+        "agl_activation_rate": 0.25,
+        "critical_activation_rate": 0.0
+      }
+    }
+  }
+}
