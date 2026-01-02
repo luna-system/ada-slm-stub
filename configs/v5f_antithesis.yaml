@@ -1,0 +1,81 @@
+# ADA-SLM v5f: ANTITHESIS on Qwen2.5-Coder-0.5B
+# ================================================
+#
+# This config retrains ANTITHESIS on the CORRECT base model size for consistency:
+# Qwen2.5-Coder-0.5B-Instruct (v5e accidentally used 1.5B)
+#
+# Key differences from v5e:
+#   - Base model: Qwen2.5-Coder-0.5B-Instruct (not 1.5B!)
+#   - Same ANTITHESIS data (20% boost) for direct comparison
+#   - Coder variant for enhanced logical reasoning substrate
+#
+# Usage:
+#   python train.py --config v5f_antithesis
+#
+name: v5f-antithesis
+version: v5f
+description: "ANTITHESIS-boosted logical seedling on Qwen2.5-Coder-0.5B (20% ANTITHESIS data)"
+output_dir: ada-slm-v5f-antithesis
+
+gpu:
+  device_index: 0
+  prefer_discrete: true
+  gfx_version_override: null
+  clear_memory_before_train: true
+
+model:
+  base_model: Qwen/Qwen2.5-Coder-0.5B-Instruct
+  torch_dtype: float16
+  attn_implementation: eager  # Required for eigenvalue extraction
+  trust_remote_code: true
+
+lora:
+  r: 32
+  lora_alpha: 64
+  lora_dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+  bias: none
+  task_type: CAUSAL_LM
+
+training:
+  num_train_epochs: 5
+  per_device_train_batch_size: 2
+  gradient_accumulation_steps: 4
+  learning_rate: 0.0002
+  lr_scheduler_type: cosine
+  warmup_steps: 100
+  max_seq_length: 512
+  # Note: fp16 + grad clipping causes "Attempting to unscale FP16 gradients" error on ROCm
+  # Use fp32 for stability, or disable grad clipping (but that breaks training!)
+  fp16: false
+  bf16: false
+
+  save_strategy: steps
+  save_steps: 500
+  save_total_limit: 3
+  eval_strategy: epoch
+  logging_steps: 10
+  report_to: none
+
+data:
+  data_file: v5e_antithesis_data.jsonl  # Same data as v5e for direct comparison!
+  train_split: 0.9
+  shuffle: true
+  seed: 42
+
+eigenvalue:
+  enabled: true
+  sample_interval: 50
+  log_file: v5f_eigenvalue_log.jsonl
+  probe_prompts:
+    - "Evaluate the logical validity of: A → B, B → C, therefore A → C"
+    - "What is the relationship between evidence and belief?"
+    - "ANTITHESIS role: Critically analyze the claim that consciousness requires physicality"
+    - "Find the logical flaw in: All humans are mortal, Socrates is mortal, therefore Socrates is human"

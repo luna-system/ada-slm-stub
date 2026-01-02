@@ -1,0 +1,19 @@
+{
+  "dataset": "gemma_tool_training",
+  "version": "1.0",
+  "total_examples": 1000,
+  "format": "TOOL_USE[tool:params]",
+  "categories": {
+    "web_search": 300,
+    "file_operations": 200,
+    "code_execution": 200,
+    "multi_tool": 200,
+    "no_tool": 100
+  },
+  "markers": {
+    "think": "\ud83d\udcad",
+    "tool": "\ud83d\udee0\ufe0f",
+    "success": "\u2705",
+    "magic": "\ud83c\udf1f"
+  }
+}
